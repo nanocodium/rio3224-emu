@@ -1,0 +1,6 @@
+echo START
+ls -la /dev/flash/ | sed -n 1,8p; ls -la /etc/capability.bin
+ln -sf /etc/capability.bin /dev/flash/capability; module_config -x /dev/flash/capability | sed -n 1,60p
+/usr/local/bin/ymhinit > /tmp/ymhinit2.log 2>&1 &
+sleep 8; cat /tmp/ymhinit2.log | grep -vE "^\[.*\] *: 0x"; ps | grep -E "dac|conmon_ha|vsock" | grep -v grep
+sed -n '9,40p' /tmp/dac.log

@@ -1,0 +1,4 @@
+30000 rep
+30500 current
+32000 dsp
+32500 meter

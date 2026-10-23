@@ -1,0 +1,3 @@
+echo START
+gdb -q -batch -ex "info types" /usr/local/bin/dac 2>&1 | grep -iE "module_config|capab|mc_|sentinel|aud_mc|config_t" | sed -n 1,60p
+gdb -q -batch -ex "info functions mc_" -ex "info functions ModuleConfig" /usr/local/bin/dac 2>&1 | grep -vE "^$|^All|^File" | sed -n 1,50p

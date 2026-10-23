@@ -1,0 +1,10 @@
+set pagination off
+disassemble /s set_BASE_MANUFACTURER
+disassemble /s set_BROWSE_DEVICE_LABEL
+disassemble /s updateNotifyManf
+disassemble /s notifyRename
+disassemble /s notifyDeviceList
+disassemble /s dacDeviceNotifyDeviceList
+disassemble /s dacCmdSendManfNotify
+disassemble /s set_BASE_MODE
+disassemble /s set_BASE_FORCE_INIT

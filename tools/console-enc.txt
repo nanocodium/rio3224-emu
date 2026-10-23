@@ -1,0 +1,3 @@
+30000 rep
+30500 encoder
+31000 switch

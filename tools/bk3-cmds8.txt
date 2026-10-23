@@ -1,0 +1,2 @@
+echo START
+gdb -q -batch -ex "break mainExit" -ex run -ex bt -ex "frame 1" -ex "info locals" -ex "x/24i \$pc-72" -ex "info frame" --args /usr/local/bin/dac -t 2>&1 | grep -v "^\[Thu" | sed -n 1,90p

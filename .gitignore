@@ -1,0 +1,19 @@
+# Build output
+/build-msvc/
+/build/
+/out/
+
+# Extracted firmware, module images and update packages: not redistributable.
+# Obtain the Yamaha update package yourself; see README.md.
+/fw/
+
+# Renesas hardware manuals (PDFs are not redistributable; the text extracts are kept)
+/docs/*.pdf
+
+# Third-party reference checkouts, each its own upstream repository
+/re/ref/
+
+# Run artefacts
+*.pcap
+dante-endpoint*.cfg
+*.wav

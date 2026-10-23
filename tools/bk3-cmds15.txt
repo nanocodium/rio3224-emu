@@ -1,0 +1,6 @@
+echo START
+cat /tmp/ymhinit.log | grep -vE "^\[.*\] *: 0x"
+ps | grep -E "dac|conmon_ha|vsock" | grep -v grep
+sed -n '9,40p' /tmp/dac.log
+sed -n '1,8p' /tmp/haremote_client.log
+ls -la /dev/flash/capability; module_config -x /dev/flash/capability 2>&1 | sed -n 1,3p

@@ -1,0 +1,8 @@
+echo START
+grep squash /proc/filesystems; cat /sys/class/mtd/mtd10/size; cat /sys/class/mtd/mtd10/erasesize
+cat /dev/mtdblock10 > /tmp/u.sqfs; ls -la /tmp/u.sqfs
+mount -t squashfs -o loop /tmp/u.sqfs /mnt; echo rc=$?; ls /mnt
+dmesg | grep -i -E "squash|loop|mtdblock" 
+ls -la /tmp/ /var/
+cat /var/log/dante_manager.log
+ls -la /dev/syd_reg0 /dev/spi/ /dev/ttyS0 /dev/ttyS1 /dev/flash/capability

@@ -1,0 +1,2 @@
+echo START
+gdb -q -batch -ex "break *0x12fa4" -ex run -ex "p/d \$r0" -ex "p/x \$r0" -ex "info functions Task" -ex "disassemble main" --args /usr/local/bin/dac -t 2>&1 | grep -v "^\[Thu" | grep -E "^\$|Task|movw	r0|movt	r0|All functions|^0x|dac[A-Z]" | sed -n 1,120p

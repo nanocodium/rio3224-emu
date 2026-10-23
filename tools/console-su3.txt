@@ -1,0 +1,7 @@
+30000 mms
+30500 setprm SETUP Dev/UI/StartupMode 0 0 0
+31000 getprm SETUP Dev/UI/StartupMode 0 0
+31500 set 48v 0 1
+32000 set gain 0 1000
+33500 /rep current
+35000 /dsp meter

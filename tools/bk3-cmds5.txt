@@ -1,0 +1,9 @@
+echo START
+cat /proc/mounts | grep -E "local"; ls /usr/local/bin
+ls -la /tmp | grep -i -E "apps_done|ymh|dac|vsock|haremote"
+cat /tmp/ymhinit.log
+cat /tmp/dac.log
+cat /tmp/haremote_client.log
+cat /tmp/vsock.log
+ps | grep -E "dac|conmon_ha|vsock|ymhinit" | grep -v grep
+sed -n '40,70p' /tmp/dante_manager.log

@@ -1,0 +1,6 @@
+echo START
+ls /dev/flash | tr '\n' ' '; echo; ls -la /dev/flash/capability; ls /tmp | tr '\n' ' '; echo
+cat /tmp/ymhinit.log | grep -vE "^\[.*\] *: 0x"
+ps | grep -E "dac|conmon_ha|vsock|ymhinit" | grep -v grep
+sed -n '9,40p' /tmp/dac.log
+sed -n '1,6p' /tmp/haremote_client.log

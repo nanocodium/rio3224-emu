@@ -1,0 +1,4 @@
+echo START
+gdb -q -batch -ex "break *0x12fa4" -ex run -ex "p \$r0" -ex "call (int)dacTaskPrintInfo(stderr)" --args /usr/local/bin/dac -t 2>&1 | grep -v "^\[Thu" | grep -vE "^=|^  |DAC \(|^$" | sed -n 1,60p
+/usr/local/bin/dac -t -p > /tmp/dac3.log 2>&1 &
+sleep 6; ps | grep "dac -t" | grep -v grep; sed -n '9,20p' /tmp/dac3.log

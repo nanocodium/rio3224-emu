@@ -1,0 +1,3 @@
+set pagination off
+disassemble fs2Type
+disassemble notifyBrowseComplete

@@ -1,0 +1,9 @@
+echo START
+hexdump -C /dev/mtdblock10 | sed -n 1,2p
+ls /usr/local /usr/local/bin; cat /proc/mounts | grep -E "local|squash"
+ls -la /tmp | grep -i -E "apps_done|ymh|dac|vsock|haremote"
+cat /tmp/ymhinit.log
+cat /tmp/dac.log
+cat /tmp/haremote_client.log
+cat /tmp/vsock.log
+ps | grep -E "dac|conmon_ha|vsock|ymhinit"

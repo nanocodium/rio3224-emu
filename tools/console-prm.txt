@@ -1,0 +1,4 @@
+24000 mms
+24500 getprm
+27000 getprm NonVolatile GainCompensationOn 0 0
+27500 getprm NonVolatile GcOn 0 0

@@ -1,0 +1,5 @@
+30000 mms
+30500 getprm SYSTEM Dev/DIO/Mute 0 0
+31000 getprm SYSTEM Dev/WCLK/Lock 0 0
+31500 getprm SYSTEM Dev/WCLK/Sync 0 0
+32000 getprm SYSTEM Dev/WCLK/Valid 0 0

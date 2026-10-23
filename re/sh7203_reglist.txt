@@ -1,0 +1,1171 @@
+H'FFFFFFFC
+PC & H'FFFFFFFC
+H'FFFFFFFC + 
+when Rn < (H'FFFFFF80),  
+(H'FFFFFF80) → Rn, 1 → CS 
+When Rn < (H'FFFF8000),  
+(H'FFFF8000) → Rn, 1 → CS 
+Signaling non-number H'FFC0 0000 to H'FFFF FFFF H'FFF8 0000  0000 0000 to  
+H'FFFF FFFF  FFFF FFFF 
+Frequency control register FRQCR R/W H'0003 H'FFFE0010 16 
+ H'FFFE0800 16, 32 
+Interrupt control register 1 ICR1 R/W H'0000 H'FFFE0802 16, 32 
+Interrupt control register 2 ICR2 R/W H'0000 H'FFFE0804 16, 32 
+ H'0000 H'FFFE0806 16, 32 
+PINT interrupt enable register PINTER R/W H'0000 H'FFFE0808 16, 32 
+PINT interrupt request register PIRR R H'0000 H'FFFE080A 16, 32 
+Bank control register IBCR R/W H'0000 H'FFFE080C 16, 32 
+Bank number register IB NR R/W H'0000 H'FFFE080E 16, 32 
+Interrupt priority register 01 IPR01 R/W H'0000 H'FFFE0818 16, 32 
+Interrupt priority register 02 IPR02 R/W H'0000 H'FFFE081A 16, 32 
+Interrupt priority register 05 IPR05 R/W H'0000 H'FFFE0820 16, 32 
+Interrupt priority register 06 IPR06 R/W H'0000 H'FFFE0C00 16, 32 
+Interrupt priority register 07 IPR07 R/W H'0000 H'FFFE0C02 16, 32 
+Interrupt priority register 08 IPR08 R/W H'0000 H'FFFE0C04 16, 32 
+Interrupt priority register 09 IPR09 R/W H'0000 H'FFFE0C06 16, 32 
+Interrupt priority register 10 IPR10 R/W H'0000 H'FFFE0C08 16, 32 
+Interrupt priority register 11 IPR11 R/W H'0000 H'FFFE0C0A 16, 32 
+Interrupt priority register 12 IPR12 R/W H'0000 H'FFFE0C0C 16, 32 
+Interrupt priority register 13 IPR13 R/W H'0000 H'FFFE0C0E 16, 32 
+Interrupt priority register 14 IPR14 R/W H'0000 H'FFFE0C10 16, 32 
+Interrupt priority register 15 IPR15 R/W H'0000 H'FFFE0C12 16, 32 
+Interrupt priority register 16 IPR16 R/W H'0000 H'FFFE0C14 16, 32 
+Interrupt priority register 17 IPR17 R/W H'0000 H'FFFE0C16 16, 32 
+Break address register_0 BAR_0 R/W H'00000000 H'FFFC0400 32 
+Break address mask register_0 BAMR_0 R/W H'00000000 H'FFFC0404 32 
+Break bus cycle register_0 BBR_0 R/W H'0000 H'FFFC04A0 16 
+Break data register_0 BDR_0 R/W H'00000000 H'FFFC0408 32 
+Break data mask register_0 BDMR_0 R/W H'00000000 H'FFFC040C 32 
+Break address register_1 BAR_1 R/W H'00000000 H'FFFC0410 32 
+Break address mask register_1 BAMR_1 R/W H'00000000 H'FFFC0414 32 
+Break bus cycle register_1 BBR_1 R/W H'0000 H'FFFC04B0 16 
+Break data register_1 BDR_1 R/W H'00000000 H'FFFC0418 32 
+Break data mask register_1 BDMR_1 R/W H'00000000 H'FFFC041C 32 
+Common Break control register BRCR R/W H'00000000 H'FFFC04C0 32 
+Cache control register 1 CCR1 R/W H'00000000 H'FFFC1000 32 
+Cache control register 2 CCR2 R/W H'00000000 H'FFFC1004 32 
+H'40000000 to H'FFFBFFFF Other On-chip RAM, reserved area * ⎯ 
+H'FFFC0000 to H'FFFFFFFF Other On-chip peripheral modules, reserved area* ⎯ 
+Common control register CMNCR R/W H'00001010 H'FFFC0000 32 
+CS0 space bus control register CS0BCR R/W H'36DB0600 * H'FFFC0004 32 
+CS1 space bus control register CS1BCR R/W H'36DB0600 * H'FFFC0008 32 
+CS2 space bus control register CS2BCR R/W H'36DB0600 * H'FFFC000C 32 
+CS3 space bus control register CS3BCR R/W H'36DB0600 * H'FFFC0010 32 
+CS4 space bus control register CS4BCR R/W H'36DB0600 * H'FFFC0014 32 
+CS5 space bus control register CS5BCR R/W H'36DB0600 * H'FFFC0018 32 
+CS6 space bus control register CS6BCR R/W H'36DB0600 * H'FFFC001C 32 
+CS7 space bus control register CS7BCR R/W H'36DB0600 * H'FFFC0020 32 
+CS0 space wait control register CS0WCR R/W H'00000500 H'FFFC0028 32 
+CS1 space wait control register CS1WCR R/W H'00000500 H'FFFC002C 32 
+CS2 space wait control register CS2WCR R/W H'00000500 H'FFFC0030 32 
+CS3 space wait control register CS3WCR R/W H'00000500 H'FFFC0034 32 
+CS4 space wait control register CS4WCR R/W H'00000500 H'FFFC0038 32 
+CS5 space wait control register CS5WCR R/W H'00000500 H'FFFC003C 32 
+CS6 space wait control register CS6WCR R/W H'00000500 H'FFFC0040 32 
+CS7 space wait control register CS7WCR R/W H'00000500 H'FFFC0044 32 
+SDRAM control register SDCR R/W H'00000000 H'FFFC004C 32 
+Refresh timer control/status register RTCSR R/W H'00000000 H'FFFC0050 32 
+Refresh timer counter RTCNT R/W H' 00000000 H'FFFC0054 32 
+Refresh time constant register RTCOR R/W H'00000000 H'FFFC0058 32 
+written to the SDRAM mode register by performing a write to address H'FFFC4000 + X for area 2 
+SDRAM, and to address H'FFFC5000 + X for area 3 SDRAM. In this operation the data is 
+16 bits 2 H'FFFC4440 H'0000440 
+ 3 H'FFFC4460 H'0000460 
+32 bits 2 H'FFFC4880 H'0000880 
+ 3 H'FFFC48C0 H'00008C0 
+16 bits 2 H'FFFC4040 H'0000040 
+ 3 H'FFFC4060 H'0000060 
+32 bits 2 H'FFFC4080 H'0000080 
+ 3 H'FFFC40C0 H'00000C0 
+16 bits 2 H'FFFC5440 H'0000440 
+ 3 H'FFFC5460 H'0000460 
+32 bits 2 H'FFFC5880 H'0000880 
+ 3 H'FFFC58C0 H'00008C0 
+16 bits 2 H'FFFC5040 H'0000040 
+ 3 H'FFFC5060 H'0000060 
+32 bits 2 H'FFFC5080 H'0000080 
+ 3 H'FFFC50C0 H'00000C0 
+SAR0 R/W H'00000000 H'FFFE1000 16, 32 
+DAR0 R/W H'00000000 H'FFFE1004 16, 32 
+DMATCR0 R/W H'00000000 H'FFFE1008 16, 32 
+H'00000000 H'FFFE100C 8, 16, 32 
+RSAR0 R/W H'00000000 H'FFFE1100 16, 32 
+RDAR0 R/W H'00000000 H'FFFE1104 16, 32 
+RDMATCR0 R/W H'00000000 H'FFFE1108 16, 32 
+SAR1 R/W H'00000000 H'FFFE1010 16, 32 
+DAR1 R/W H'00000000 H'FFFE1014 16, 32 
+DMATCR1 R/W H'00000000 H'FFFE1018 16, 32 
+H'00000000 H'FFFE101C 8, 16, 32 
+RSAR1 R/W H'00000000 H'FFFE1110 16, 32 
+RDAR1 R/W H'00000000 H'FFFE1114 16, 32 
+RDMATCR1 R/W H'00000000 H'FFFE1118 16, 32 
+SAR2 R/W H'00000000 H'FFFE1020 16, 32 
+DAR2 R/W H'00000000 H'FFFE1024 16, 32 
+DMATCR2 R/W H'00000000 H'FFFE1028 16, 32 
+H'00000000 H'FFFE102C 8, 16, 32 
+RSAR2 R/W H'00000000 H'FFFE1120 16, 32 
+RDAR2 R/W H'00000000 H'FFFE1124 16, 32 
+RDMATCR2 R/W H'00000000 H'FFFE1128 16, 32 
+SAR3 R/W H'00000000 H'FFFE1030 16, 32 
+DAR3 R/W H'00000000 H'FFFE1034 16, 32 
+DMATCR3 R/W H'00000000 H'FFFE1038 16, 32 
+H'00000000 H'FFFE103C 8, 16, 32 
+RSAR3 R/W H'00000000 H'FFFE1130 16, 32 
+RDAR3 R/W H'00000000 H'FFFE1134 16, 32 
+RDMATCR3 R/W H'00000000 H'FFFE1138 16, 32 
+SAR4 R/W H'00000000 H'FFFE1040 16, 32 
+DAR4 R/W H'00000000 H'FFFE1044 16, 32 
+DMATCR4 R/W H'00000000 H'FFFE1048 16, 32 
+H'00000000 H'FFFE104C 8, 16, 32 
+RSAR4 R/W H'00000000 H'FFFE1140 16, 32 
+RDAR4 R/W H'00000000 H'FFFE1144 16, 32 
+RDMATCR4 R/W H'00000000 H'FFFE1148 16, 32 
+SAR5 R/W H'00000000 H'FFFE1050 16, 32 
+DAR5 R/W H'00000000 H'FFFE1054 16, 32 
+DMATCR5 R/W H'00000000 H'FFFE1058 16, 32 
+H'00000000 H'FFFE105C 8, 16, 32 
+RSAR5 R/W H'00000000 H'FFFE1150 16, 32 
+RDAR5 R/W H'00000000 H'FFFE1154 16, 32 
+RDMATCR5 R/W H'00000000 H'FFFE1158 16, 32 
+SAR6 R/W H'00000000 H'FFFE1060 16, 32 
+DAR6 R/W H'00000000 H'FFFE1064 16, 32 
+DMATCR6 R/W H'00000000 H'FFFE1068 16, 32 
+H'00000000 H'FFFE106C 8, 16, 32 
+RSAR6 R/W H'00000000 H'FFFE1160 16, 32 
+RDAR6 R/W H'00000000 H'FFFE1164 16, 32 
+RDMATCR6 R/W H'00000000 H'FFFE1168 16, 32 
+SAR7 R/W H'00000000 H'FFFE1070 16, 32 
+DAR7 R/W H'00000000 H'FFFE1074 16, 32 
+DMATCR7 R/W H'00000000 H'FFFE1078 16, 32 
+H'00000000 H'FFFE107C 8, 16, 32 
+RSAR7 R/W H'00000000 H'FFFE1170 16, 32 
+RDAR7 R/W H'00000000 H'FFFE1174 16, 32 
+RDMATCR7 R/W H'00000000 H'FFFE1178 16, 32 
+H'0000 H'FFFE1200 8, 16 
+DMARS0 R/W H'0000 H'FFFE1300 16 
+DMARS1 R/W H'0000 H'FFFE1304 16 
+DMARS2 R/W H'0000 H'FFFE1308 16 
+DMARS3 R/W H'0000 H'FFFE130C 16 
+Timer control register_0 TCR_0 R/W H'00 H'FFFE4300 8 
+Timer mode register_0 TMDR_0 R/W H'00 H'FFFE4301 8 
+Timer I/O control register H_0 TIORH_0 R/W H'00 H'FFFE4302 8 
+Timer I/O control register L_0 TIORL_0 R/W H'00 H'FFFE4303 8 
+TIER_0 R/W H'00 H'FFFE4304 8 
+Timer status register_0 TSR_0 R/W H'C0 H'FFFE4305 8 
+Timer counter_0 TCNT_0 R/W H'0000 H'FFFE4306 16 
+Timer general register A_0 TGRA_0 R/W H'FFFF H'FFFE4308 16 
+Timer general register B_0 TGRB_0 R/W H'FFFF H'FFFE430A 16 
+Timer general register C_0 TGRC_0 R/W H'FFFF H'FFFE430C 16 
+Timer general register D_0 TGRD_0 R/W H'FFFF H'FFFE430E 16 
+Timer general register E_0 TGRE_0 R/W H'FFFF H'FFFE4320 16 
+Timer general register F_0 TGRF_0 R/W H'FFFF H'FFFE4322 16 
+TIER2_0 R/W H'00 H'FFFE4324 8 
+Timer status register2_0 TSR2_0 R/W H'C0 H'FFFE4325 8 
+TBTM_0 R/W H'00 H'FFFE4326 8 
+1 Timer control register_1 TCR_1 R/W H'00 H'FFFE4380 8 
+ Timer mode register_1 TMDR_1 R/W H'00 H'FFFE4381 8 
+ Timer I/O control register_1 TIOR_1 R/W H'00 H'FFFE4382 8 
+TIER_1 R/W H'00 H'FFFE4384 8 
+ Timer status register_1 TSR_1 R/W H'C0 H'FFFE4385 8 
+Timer counter_1 TCNT_1 R/W H'0000 H'FFFE4386 16 
+Timer general register A_1 TGRA_1 R/W H'FFFF H'FFFE4388 16 
+Timer general register B_1 TGRB_1 R/W H'FFFF H'FFFE438A 16 
+TICCR R/W H'00 H'FFFE4390 8 
+Timer control register_2 TCR_2 R/W H'00 H'FFFE4000 8 
+Timer mode register_2 TMDR_2 R/W H'00 H'FFFE4001 8 
+Timer I/O control register_2 TIOR_2 R/W H'00 H'FFFE4002 8 
+TIER_2 R/W H'00 H'FFFE4004 8 
+Timer status register_2 TSR_2 R/W H'C0 H'FFFE4005 8 
+Timer counter_2 TCNT_2 R/W H'0000 H'FFFE4006 16 
+Timer general register A_2 TGRA_2 R/W H'FFFF H'FFFE4008 16 
+Timer general register B_2 TGRB_2 R/W H'FFFF H'FFFE400A 16 
+Timer control register_3 TCR_3 R/W H'00 H'FFFE4200 8 
+Timer mode register_3 TMDR_3 R/W H'00 H'FFFE4202 8 
+Timer I/O control register H_3 TIORH_3 R/W H'00 H'FFFE4204 8 
+Timer I/O control register L_3 TIORL_3 R/W H'00 H'FFFE4205 8 
+TIER_3 R/W H'00 H'FFFE4208 8 
+Timer status register_3 TSR_3 R/W H'C0 H'FFFE422C 8 
+Timer counter_3 TCNT_3 R/W H'0000 H'FFFE4210 16 
+Timer general register A_3 TGRA_3 R/W H'FFFF H'FFFE4218 16 
+Timer general register B_3 TGRB_3 R/W H'FFFF H'FFFE421A 16 
+Timer general register C_3 TGRC_3 R/W H'FFFF H'FFFE4224 16 
+Timer general register D_3 TGRD_3 R/W H'FFFF H'FFFE4226 16 
+TBTM_3 R/W H'00 H'FFFE4238 8 
+4 Timer control register_4 TCR_4 R/W H'00 H'FFFE4201 8 
+ Timer mode register_4 TMDR_4 R/W H'00 H'FFFE4203 8 
+ Timer I/O control register H_4 TIORH_4 R/W H'00 H'FFFE4206 8 
+ Timer I/O control register L_4 TIORL_4 R/W H'00 H'FFFE4207 8 
+TIER_4 R/W H'00 H'FFFE4209 8 
+Timer status register_4 TSR_4 R/W H'C0 H'FFFE422D 8 
+Timer counter_4 TCNT_4 R/W H'0000 H'FFFE4212 16 
+Timer general register A_4 TGRA_4 R/W H'FFFF H'FFFE421C 16 
+Timer general register B_4 TGRB_4 R/W H'FFFF H'FFFE421E 16 
+Timer general register C_4 TGRC_4 R/W H'FFFF H'FFFE4228 16 
+Timer general register D_4 TGRD_4 R/W H'FFFF H'FFFE422A 16 
+TBTM_4 R/W H'00 H'FFFE4239 8 
+TADCR R/W H'0000 H'FFFE4240 16 
+TADCORA_4 R/W H'FFFF H'FFFE4244 16 
+TADCORB_4 R/W H'FFFF H'FFFE4246 16 
+TADCOBRA_4 R/W H'FFFF H'FFFE4248 16 
+TADCOBRB_4 R/W H'FFFF H'FFFE424A 16 
+Common Timer start register TSTR R/W H'00 H'FFFE4280 8 
+ Timer synchronous register  TSYR R/W H'00 H'FFFE4281 8 
+TRWER R/W H'01 H'FFFE4284 8 
+TOER R/W H'C0 H'FFFE420A 8 
+Timer output control register 1 TOCR1 R/W H'00 H'FFFE420E 8 
+Timer output control register 2 TOCR2 R/W H'00 H'FFFE420F 8 
+ Timer gate control register TGCR R/W H80 H'FFFE420D 8 
+ Timer cycle control register TCDR R/W H'FFFF H'FFFE4214 16 
+ Timer dead time data register TDDR R/W H'FFFF H'FFFE4216 16 
+ Timer subcounter TCNTS R H'0000 H'FFFE4220 16 
+ Timer cycle buffer register TCBR R/W H'FFFF H'FFFE4222 16 
+TITCR R/W H'00 H'FFFE4230 8 
+ Timer interrupt skipping counter TITCNT R H'00 H'FFFE4231 8 
+TBTER R/W H'00 H'FFFE4232 8 
+TDER R/W H'01 H'FFFE4234 8 
+ Timer waveform control register TWCR R/W H'00 H'FFFE4260 8 
+TOLBR R/W H'00 H'FFFE4236 8 
+Common Compare match timer start r egister CMSTR R/W H'0000 H'FFFEC000 16 
+CMCSR_0 R/W H'0000 H'FFFEC002 16 
+Compare match counter_0 CMCNT _0 R/W H'0000 H'FFFEC004 8, 16 
+Compare match constant register_0 CMCOR_0 R/W H'FFFF H'FFFEC006 8, 16 
+CMCSR_1 R/W H'0000 H'FFFEC008 16 
+ Compare match counter_1 CMCNT _1 R/W H'0000 H'FFFEC00A 8, 16 
+ Compare match constant register _1 CMCOR_1 R/W H'FFFF H'FFFEC00C 8, 16 
+Watchdog timer counter WTCNT R/W H'00 H'FFFE0002 16 * 
+WTCSR R/W H'18 H'FFFE0000 16 * 
+WRCSR R/W H'1F H'FFFE0004 16 * 
+Write dataAddress: H'FFFE0002
+Write dataAddress: H'FFFE0000
+WRCSR must be written by a word access to address H'FFFE0004. It cannot be written by byte 
+Address: H'FFFE0004
+Address: H'FFFE0004
+allocated to address H'FFFE0000, WTCNT to address H'FFFE0002, and WRCSR to address 
+H'FFFE0004. Byte transfer instructions must be used for reading from these registers.  
+64-Hz counter R64CNT R H'xx H'FFFF 2000 8 
+Second counter RSECCNT R/W H'xx H'FFFF 2002 8 
+Minute counter RMINCNT R/W H'xx H'FFFF 2004 8 
+Hour counter RHRCNT R/W H'xx H'FFFF 2006 8 
+Day of week counter RWKCNT R/W H'xx H'FFFF 2008 8 
+Date counter RDAYCNT R/W H'xx H'FFFF 200A 8 
+Month counter RMONCNT R/W H'xx H'FFFF 200C 8 
+Year counter RYRCNT R/W H'xxxx H'FFFF 200E 16 
+Second alarm register RSECAR R/W H'xx H'FFFF 2010 8 
+Minute alarm register RMINAR R/W H'xx H'FFFF 2012 8 
+Hour alarm register RHRAR R/W H'xx H'FFFF 2014 8 
+Day of week alarm register RWKAR R/W H'xx H'FFFF 2016 8 
+Date alarm register RDAYAR R/W H'xx H'FFFF 2018 8 
+Month alarm register RMONAR R/W H'xx H'FFFF 201A 8 
+Year alarm register RYRAR R/W H'xxxx H'FFFF 2020 16 
+RTC control register 1 RCR1 R/W H'00 H'FFFF 201C 8 
+RTC control register 2 RCR2 R/W H'09 H'FFFF 201E 8 
+RTC control register 3  RCR3 R/W H'00 H'FFFF 2024 8 
+Serial mode register_0 SCSMR_0 R/W H'0000 H'FFFE8000 16 
+Bit rate register_0 SCBRR_0 R/W H'FF H'FFFE8004 8 
+Serial control register_0 SCSCR_0 R/W H'0000 H'FFFE8008 16 
+SCFTDR_0 W Undefined H'FFFE800C 8 
+H'0060 H'FFFE8010 16 
+SCFRDR_0 R Undefined H'FFFE8014 8 
+FIFO control register_0 SCFCR_0 R/W H'0000 H'FFFE8018 16 
+FIFO data count register_0 SCFDR_0 R H'0000 H'FFFE801C 16 
+Serial port register_0 SCSPTR_0 R/W H'0050 H'FFFE8020 16 
+H'0000 H'FFFE8024 16 
+SCEMR_0 R/W H'0000 H'FFFE8028 16 
+1 Serial mode register_1 SCSMR_1 R/W H'0000 H'FFFE8800 16 
+ Bit rate register_1 SCBRR_1 R/W H'FF H'FFFE8804 8 
+ Serial control register_1 SCSCR_1 R/W H'0000 H'FFFE8808 16 
+SCFTDR_1 W Undefined H'FFFE880C 8 
+H'0060 H'FFFE8810 16 
+SCFRDR_1 R Undefined H'FFFE8814 8 
+ FIFO control register_1 SCFCR_1 R/W H'0000 H'FFFE8818 16 
+ FIFO data count register_1 SCFDR_1 R H'0000 H'FFFE881C 16 
+ Serial port register_1 SCSPTR_1 R/W H'0050 H'FFFE8820 16 
+H'0000 H'FFFE8824 16 
+Serial mode register_2 SCSMR_2 R/W H'0000 H'FFFE9000 16 
+Bit rate register_2 SCBRR_2 R/W H'FF H'FFFE9004 8 
+Serial control register_2 SCSCR_2 R/W H'0000 H'FFFE9008 16 
+SCFTDR_2 W Undefined H'FFFE900C 8 
+H'0060 H'FFFE9010 16 
+SCFRDR_2 R Undefined H'FFFE9014 8 
+FIFO control register_2 SCFCR_2 R/W H'0000 H'FFFE9018 16 
+FIFO data count register_2 SCFDR_2 R H'0000 H'FFFE901C 16 
+Serial port register_2 SCSPTR_2 R/W H'0050 H'FFFE9020 16 
+H'0000 H'FFFE9024 16 
+SCEMR_2 R/W H'0000 H'FFFE9028 16 
+Serial mode register_3 SCSMR_3 R/W H'0000 H'FFFE9800 16 
+Bit rate register_3 SCBRR_3 R/W H'FF H'FFFE9804 8 
+Serial control register_3 SCSCR_3 R/W H'0000 H'FFFE9808 16 
+SCFTDR_3 W Undefined H'FFFE980C 8 
+H'0060 H'FFFE9810 16 
+SCFRDR_3 R Undefined H'FFFE9814 8 
+FIFO control register_3 SCFCR_3 R/W H'0000 H'FFFE9818 16 
+FIFO data count register_3 SCFDR_3 R H'0000 H'FFFE981C 16 
+Serial port register_3 SCSPTR_3 R/W H'0050 H'FFFE9820 16 
+H'0000 H'FFFE9824 16 
+SCEMR_3 R/W H'0000 H'FFFE9828 16 
+SS control register H_0 SSCRH_0 R/W H'0D H'FFFE7000 8, 16 
+SS control register L_0 SSCRL_0 R/W H'00 H'FFFE7001 8 
+SS mode register_0 SSMR_0 R/W H'00 H'FFFE7002 8, 16 
+SS enable register_0 SSER_0 R/W H'00 H'FFFE7003 8 
+SS status register_0 SSSR_0 R/W H'04 H'FFFE7004 8, 16 
+SS control register 2_0 SSCR2_0 R/W H'00 H'FFFE7005 8 
+SS transmit data register 0_0 SSTDR0_0 R/W H'00 H'FFFE7006 8, 16 
+SS transmit data register 1_0 SSTDR1_0 R/W H'00 H'FFFE7007 8 
+SS transmit data register 2_0 SSTDR2_0 R/W H'00 H'FFFE7008 8, 16 
+SS transmit data register 3_0 SSTDR3_0 R/W H'00 H'FFFE7009 8 
+SS receive data register 0_0 SSRDR0_0 R H'00 H'FFFE700A 8, 16 
+SS receive data register 1_0 SSRDR1_0 R H'00 H'FFFE700B 8 
+SS receive data register 2_0 SSRDR2_0 R H'00 H'FFFE700C 8, 16 
+SS receive data register 3_0 SSRDR3_0 R H'00 H'FFFE700D 8 
+1 SS control register H_1 SSCRH_1 R/W H'0D H'FFFE7800 8, 16 
+ SS control register L_1 SSCRL_1 R/W H'00 H'FFFE7801 8 
+ SS mode register_1 SSMR_1 R/W H'00 H'FFFE7802 8, 16 
+ SS enable register_1 SSER_1 R/W H'00 H'FFFE7803 8 
+ SS status register_1 SSSR_1 R/W H'04 H'FFFE7804 8, 16 
+ SS control register 2_1 SSCR2_1 R/W H'00 H'FFFE7805 8 
+ SS transmit data register 0_1 SSTDR0_1 R/W H'00 H'FFFE7806 8, 16 
+ SS transmit data register 1_1 SSTDR1_1 R/W H'00 H'FFFE7807 8 
+ SS transmit data register 2_1 SSTDR2_1 R/W H'00 H'FFFE7808 8, 16 
+ SS transmit data register 3_1 SSTDR3_1 R/W H'00 H'FFFE7809 8 
+ SS receive data register 0_1 SSRDR0_1 R H'00 H'FFFE780A 8, 16 
+1 SS receive data register 1_1 SSRDR1_1 R H'00 H'FFFE780B 8 
+ SS receive data register 2_1 SSRDR2_1 R H'00 H'FFFE780C 8, 16 
+ SS receive data register 3_1 SSRDR3_1 R H'00 H'FFFE780D 8 
+C bus control register 1 ICCR1_0 R/W H'00 H'FFFEE000 8 
+C bus control register 2 ICCR2_0 R/W H'7D H'FFFEE001 8 
+C bus mode register ICMR_0 R/W H'38 H'FFFEE002 8 
+C bus interrupt enable register ICIER_0 R/W H'00 H'FFFEE003 8 
+C bus status register ICSR_0 R/W H'00 H'FFFEE004 8 
+Slave address register SAR_0 R/W H'00 H'FFFEE005 8 
+C bus transmit data register ICDRT_0 R/W H'FF H'FFFEE006 8 
+C bus receive data register ICDRR_0 R/W H'FF H'FFFEE007 8 
+NF2CYC register NF2CYC_0 R/W H'00 H'FFFEE008 8 
+C bus control register 1 ICCR1_1 R/W H'00 H'FFFEE400 8 
+C bus control register 2 ICCR2_1 R/W H'7D H'FFFEE401 8 
+C bus mode register ICMR_1 R/W H'38 H'FFFEE402 8 
+C bus interrupt enable register ICIER_1 R/W H'00 H'FFFEE403 8 
+C bus status register ICSR_1 R/W H'00 H'FFFEE404 8 
+Slave address register SAR_1 R/W H'00 H'FFFEE405 8 
+C bus transmit data register ICDRT_1 R/W H'FF H'FFFEE406 8 
+C bus receive data register ICDRR_1 R/W H'FF H'FFFEE407 8 
+NF2CYC register NF2CYC_1 R/W H'00 H'FFFEE408 8 
+C bus control register 1 ICCR1_2 R/W H'00 H'FFFEE800 8 
+C bus control register 2 ICCR2_2 R/W H'7D H'FFFEE801 8 
+C bus mode register ICMR_2 R/W H'38 H'FFFEE802 8 
+C bus interrupt enable register ICIER_2 R/W H'00 H'FFFEE803 8 
+C bus status register ICSR_2 R/W H'00 H'FFFEE804 8 
+ Slave address register SAR_2 R/W H'00 H'FFFEE805 8 
+C bus transmit data register ICDRT_2 R/W H'FF H'FFFEE806 8 
+C bus receive data register ICDRR_2 R/W H'FF H'FFFEE807 8 
+ NF2CYC register NF2CYC_2 R/W H'00 H'FFFEE808 8 
+C bus control register 1 ICCR1_3 R/W H'00 H'FFFEEC00 8 
+C bus control register 2 ICCR2_3 R/W H'7D H'FFFEEC01 8 
+C bus mode register ICMR_3 R/W H'38 H'FFFEEC02 8 
+C bus interrupt enable register ICIER_3 R/W H'00 H'FFFEEC03 8 
+C bus status register ICSR_3 R/W H'00 H'FFFEEC04 8 
+ Slave address register SAR_3 R/W H'00 H'FFFEEC05 8 
+C bus transmit data register ICDRT_3 R/W H'FF H'FFFEEC06 8 
+C bus receive data register ICDRR_3 R/W H'FF H'FFFEEC07 8 
+ NF2CYC register NF2CYC_3 R/W H'00 H'FFFEEC08 8 
+Control register 0 SSICR_0 R/W H'00000000 H'FFFFC000 32 
+Status register 0 SSISR_0 R/W * H'02000003 H'FFFFC004 32 
+Transmit data register 0 SSITDR_0 R/W H'00000000 H'FFFFC008 32 
+Receive data register 0 SSIRDR_0 R H'00000000 H'FFFFC00C 32 
+Control register 1 SSICR_1 R/W H'00000000 H'FFFFC800 32 
+Status register 1 SSISR_1 R/W * H'02000003 H'FFFFC804 32 
+Transmit data register 1 SSITDR_1 R/W H'00000000 H'FFFFC808 32 
+Receive data register 1 SSIRDR_1 R H'00000000 H'FFFFC80C 32 
+Control register 2 SSICR_2 R/W H'00000000 H'FFFFD000 32 
+Status register 2 SSISR_2 R/W * H'02000003 H'FFFFD004 32 
+Transmit data register 2 SSITDR_2 R/W H'00000000 H'FFFFD008 32 
+Receive data register 2 SSIRDR_2 R H'00000000 H'FFFFD00C 32 
+3 Control register 3 SSICR_3 R/W H'00000000 H'FFFFD800 32 
+ Status register 3 SSISR_3 R/W * H'02000003 H'FFFFD804 32 
+ Transmit data register 3 SSITDR_3 R/W H'00000000 H'FFFFD808 32 
+ Receive data register 3 SSIRDR_3 R H'00000000 H'FFFFD80C 32 
+A/D data register A ADDRA R H'0000 H'FFFE5800 16 
+A/D data register B ADDRB R H'0000 H'FFFE5802 16 
+A/D data register C ADDRC R H'0000 H'FFFE5804 16 
+A/D data register D ADDRD R H'0000 H'FFFE5806 16 
+A/D data register E ADDRE R H'0000 H'FFFE5808 16 
+A/D data register F ADDRF R H'0000 H'FFFE580A 16 
+A/D data register G ADDRG R H'0000 H'FFFE580C 16 
+A/D data register H ADDRH R H'0000 H'FFFE580E 16 
+A/D control/status register ADCSR R/W H'0040 H'FFFE5820 16 
+D/A data register 0 DADR0 R/W H'00 H'FFFE6800 8, 16 
+D/A data register 1 DADR1 R/W H'00 H'FFFE6801 8, 16 
+D/A control register DACR R/W H'1F H'FFFE6802 8, 16 
+Common control register FLCMNCR R/W H'0000 0000 H'FFFF F000 32 
+Command control register FLCMDCR R/W H'0000 0000 H'FFFF F004 32 
+Command code register FLCMCDR R/W H'0000 0000 H'FFFF F008 32 
+Address register FLADR R/W H'0000 0000 H'FFFF F00C 32 
+Address register 2 FLADR2 R/W H'0000 0000 H'FFFF F03C 32 
+Data register FLDATAR R/W H'0000 0000 H'FFFF F010 32 
+Data counter register FLDTCNTR R/W H'0000 0000 H'FFFF F014 32 
+Interrupt DMA control register FLINTDMACR R/W H'0000 0000 H'FFFF F018 32 
+FLBSYTMR R/W H'0000 0000 H'FFFF F01C 32 
+Ready busy timeout counter FLBSYCNT R H'0000 0000 H'FFFF F020 32 
+Data FIFO register FLDTFIFO R/W H'xxxx xxxx H'FFFF F050 32 
+Control code FIFO register FLECFIFO R/W H'xxxx xxxx H'FFFF F060 32 
+Transfer control register FLTRCR R/W H'00 H'FFFF F02C 8 
+SYSCFG R/W H'0000 H'FFFC 1C00 16 
+SYSSTS R H'040x H'FFFC 1C02 16 
+Device state control register DVSTCTR R/W H'0000 H'FFFC 1C04 16 
+Test mode register TESTMODE R/W H'0100 H'FFFC 1C06 16 
+CFBCFG R/W H'000F H'FFFC 1C0A 16 
+D0FBCFG R/W H'000F H'FFFC 1C0C 16 
+D1FBCFG R/W H'000F H'FFFC 1C0E 16 
+CFIFO port register CFIFO R/W H'00000000 H'FFFC 1C10 8, 16, 32 
+D0FIFO port register D0FIFO R/W H'00000000 H'FFFC 1C14 8, 16, 32 
+D1FIFO port register D1FIFO R/W H'00000000 H'FFFC 1C18 8, 16, 32 
+CFIFO port select register CFIFOSEL R/W H'0000 H'FFFC 1C1E 16 
+CFIFO port control register CFIFOCTR R/W H'0000 H'FFFC 1C20 16 
+CFIFO port SIE register CFIFOSIE R/W H'0000 H'FFFC 1C22 16 
+D0FIFO port select register D0FIFOSEL R/W H'0000 H'FFFC 1C24 16 
+D0FIFO port control register D0FIFOCTR R/W H'0000 H'FFFC 1C26 16 
+D0 transaction counter register D0FIFOTRN R/W H'0000 H'FFFC 1C28 16 
+D1FIFO port select register D1FIFOSEL R/W H'0000 H'FFFC 1C2A 16 
+D1FIFO port control register D1FIFOCTR R/W H'0000 H'FFFC 1C2C 16 
+D1 transaction counter register D1FIFOTRN R/W H'0000 H'FFFC 1C2E 16 
+Interrupt enable register 0 INTENB0 R/W H'0000 H'FFFC 1C30 16 
+Interrupt enable register 1 INTENB1 R/W H'0000 H'FFFC 1C32 16 
+BRDY interrupt enable register BRDYENB R/W H'0000 H'FFFC 1C36 16 
+NRDY interrupt enable register NRDYENB R/W H'0000 H'FFFC 1C38 16 
+BEMP interrupt enable register BEMPENB R/W H'0000 H'FFFC 1C3A 16 
+Interrupt status register 0 INTSTS0 R/W H'00x0 H'FFFC 1C40 16 
+Interrupt status register 1 INTSTS1 R/W H'0000 H'FFFC 1C42 16 
+BRDY interrupt status register BRDYSTS R/W H'0000 H'FFFC 1C46 16 
+NRDY interrupt status register NRDYSTS R/W H'0000 H'FFFC 1C48 16 
+BEMP interrupt status register BEMPSTS R/W H'0000 H'FFFC 1C4A 16 
+Frame number register FRMNUM R/W H'0000 H'FFFC 1C4C 16 
+μFrame number register UFRMNUM R/W H'0000 H'FFFC 1C4E 16 
+USB address register USBADDR R H'0000 H'FFFC 1C50 16 
+USB request type register USBREQ R H'0000 H'FFFC 1C54 16 
+USB request value register USBVAL R H'0000 H'FFFC 1C56 16 
+USB request index register USBINDX R H'0000 H'FFFC 1C58 16 
+USB request length register USBLENG R H'0000 H'FFFC 1C5A 16 
+DCP configuration register DCPCFG R/W H'0000 H'FFFC 1C5C 16 
+DCPMAXP R/W H'0040 H'FFFC 1C5E 16 
+DCP control register DCPCTR R/W H'0040 H'FFFC 1C60 16 
+Pipe window select register PIPESEL R/W H'0000 H'FFFC 1C64 16 
+Pipe configuration register PIPECFG R/W H'0000 H'FFFC 1C66 16 
+Pipe buffer setting register PIPEBUF R/W H'0000 H'FFFC 1C68 16 
+PIPEMAXP R/W H'0000 H'FFFC 1C6A 16 
+Pipe cycle control register PIPEPERI R/W H'0000 H'FFFC 1C6C 16 
+Pipe 1 control register PIPE1CTR R/W H'0000 H'FFFC 1C70 16 
+Pipe 2 control register PIPE2CTR R/W H'0000 H'FFFC 1C72 16 
+Pipe 3 control register PIPE3CTR R/W H'0000 H'FFFC 1C74 16 
+Pipe 4 control register PIPE4CTR R/W H'0000 H'FFFC 1C76 16 
+Pipe 5 control register PIPE5CTR R/W H'0000 H'FFFC 1C78 16 
+Pipe 6 control register PIPE6CTR R/W H'0000 H'FFFC 1C7A 16 
+Pipe 7 control register PIPE7CTR R/W H'0000 H'FFFC 1C7C 16 
+USBACSWR R/W H'00000000 H'FFFC 1C84 32 
+  MOVI20   #H'FFFC1C00, R0
+  MOVI20   #H'FFFC1C84, R0
+  MOVI20   #H'FFFC1C04, R0
+  MOVI20   #H'FFFC1C06, R0
+  MOVI20   #H'FFFC1C04, R0
+LCDC input clock register LDICKR R/W H'0101 H'FFFFFC00 16 
+LCDC module type register LDMTR R/W H'0109 H'FFFFFC02 16 
+LCDC data format register LDDFR R/W H'000C H'FFFFFC04 16 
+LCDC scan mode register LDSMR R/W H'0000 H'FFFFFC06 16 
+LDSARU R/W H'0C000000 H'FFFFFC08 32 
+LDSARL R/W H'0C000000 H'FFFFFC0C 32 
+LDLAOR R/W H'0280 H'FFFFFC10 16 
+LCDC palette control register LDPALCR R/W H'0000 H'FFFFFC12 16 
+R/W ⎯ H'FFFFF800 to 
+H'FFFFFBFC 
+LDHCNR R/W H'4F52 H'FFFFFC14 16 
+LDHSYNR R/W H'0050 H'FFFFFC16 16 
+LDVDLNR R/W H'01DF H'FFFFFC18 16 
+LDVTLNR R/W H'01DF H'FFFFFC1A 16 
+LDVSYNR R/W H'01DF H'FFFFFC1C 16 
+LDACLNR R/W H'000C H'FFFFFC1E 16 
+LCDC interrupt control register LDINTR R/W H'0000 H'FFFFFC20 16 
+LDPMMR R/W H'0010 H'FFFFFC24 16 
+LDPSPR R/W H'F60F H'FFFFFC26 16 
+LCDC control register LDCNTR R/W H'0000 H'FFFFFC28 16 
+LDUINTR R/W H'0000 H'FFFFFC34 16 
+LDUINTLNR R/W H'004F H'FFFFFC36 16 
+LDLIRNR R/W H'0000 H'FFFFFC40 16 
+Port B I/O register L PBIORL R/W H'0000 H'FFFE3886 8, 16 
+Port B control register L4 PBCRL4 R/W H'0001 H'FFFE3890 8 *
+Port B control register L3 PBCRL3 R/W H'0000 H'FFFE3892 8, 16 
+Port B control register L2 PBCRL2 R/W H'0000 H'FFFE3894 8, 16, 32 
+Port B control register L1 PBCRL1 R/W H'0000 H'FFFE3896 8, 16 
+IRQOUT function control register IFCR R/W H'0000 H'FFFE38A2 8, 16 
+Port C I/O register L PCIORL R/W H'0000 H'FFFE3906 8, 16 
+Port C control register L4 PCCRL4 R/W H'0000 H'FFFE3910 8, 16, 32 
+Port C control register L3 PCCRL3 R/W H'0000 H'FFFE3912 8, 16 
+Port C control register L2 PCCRL2 R/W H'0000 H'FFFE3914 8, 16, 32 
+H'FFFE3916 8, 16 
+Port D I/O register L PDIORL R/W H'0000 H'FFFE3986 8, 16 
+H'FFFE3990 8, 16, 32 
+H'FFFE3992 8, 16 
+H'FFFE3994 8, 16, 32 
+H'FFFE3996 8, 16 
+Port E I/O register L PEIORL R/W H'0000 H'FFFE3A06 8, 16 
+Port E control register L4 PECRL4 R/W H'0000 H'FFFE3A10 8, 16, 32 
+Port E control register L3 PECRL3 R/W H'0000 H'FFFE3A12 8, 16 
+Port E control register L2 PECRL2 R/W H'0000 H'FFFE3A14 8, 16, 32 
+Port E control register L1 PECRL1 R/W H'0000 H'FFFE3A16 8, 16 
+Port F I/O register H PFIORH R/W H'0000 H'FFFE3A84 8, 16, 32 
+Port F I/O register L PFIORL R/W H'0000 H'FFFE3A86 8, 16 
+Port F control register H4 PFCRH4 R/W H'0000 H'FFFE3A88 8, 16, 32 
+Port F control register H3 PFCRH3 R/W H'0000 H'FFFE3A8A 8, 16 
+Port F control register H2 PFCRH2 R/W H'0000 H'FFFE3A8C 8, 16, 32 
+Port F control register H1 PFCRH1 R/W H'0000 H'FFFE3A8E 8, 16 
+Port F control register L4 PFCRL4 R/W H'0000 H'FFFE3A90 8, 16, 32 
+Port F control register L3 PFCRL3 R/W H'0000 H'FFFE3A92 8, 16 
+Port F control register L2 PFCRL2 R/W H'0000 H'FFFE3A94 8, 16, 32 
+Port F control register L1 PFCRL1 R/W H'0000 H'FFFE3A96 8, 16 
+SCSR R/W H'0000 H'FFFE3AA2 8, 16 
+Port A data register L PADRL R H'00xx H'FFFE3802 8, 16 
+Port B data register L PBDRL R/W H'00xx H'FFFE3882 8, 16 
+Port B port register L PBPRL R H'xxxx H'FFFE389E 8, 16 
+Port C data register L PCDRL R/W H'xxxx H'FFFE3902 8, 16 
+Port C port register L PCPRL R H'xxxx H'FFFE391E 8, 16 
+Port D data register L PDDRL R/W H'0000 H'FFFE3982 8, 16 
+Port D port register L PDPRL R H'xxxx H'FFFE399E 8, 16 
+Port E data register L PEDRL R/W H'0000 H'FFFE3A02 8, 16 
+Port E port register L PEPRL R H'xxxx H'FFFE3A1E 8, 16 
+Port F data register H PFDRH R/W H'0000 H'FFFE3A80 8, 16, 32 
+Port F data register L PFDRL R/W H'0000 H'FFFE3A82 8, 16 
+Port F port register H PFPRH R H'xxxx H'FFFE3A9C 8, 16, 32 
+Port F port register L PFPRL R H'xxxx H'FFFE3A9E 8, 16 
+Page 0 H'FFF80000 to H'FFF83FFF 
+Page 1 H'FFF84000 to H'FFF87FFF 
+Page 2 H'FFF88000 to H'FFF8BFFF 
+Page 3 H'FFF8C000 to H'FFF8FFFF 
+Page 0 H'FFFF8000 to H'FFFF8FFF 
+Page 1 H'FFFF9000 to H'FFFF9FFF 
+Page 2 H'FFFFA000 to H'FFFFAFFF 
+Page 3 H'FFFFB000 to H'FFFFBFFF 
+   MOV.L  #H'FFF80000,R0 
+   MOV.L  #H'FFF84000,R0 
+   MOV.L  #H'FFF88000,R0 
+   MOV.L  #H'FFF8C000,R0 
+for data retention, i.e., at addresses H'FFFFBFF0 to H'FFFFBFFF. If an instruction is placed at 
+(H'FFFFC000 and subsequent addresses) for the on-chip peripheral modules, and this will lead to 
+Standby control register STBCR R/W H'00 H'FFFE0014 8 
+Standby control register 2 STBCR2 R/W H'00 H'FFFE0018 8 
+Standby control register 3 STBCR3 R/W H'7E H'FFFE0408 8 
+Standby control register 4 STBCR4 R/W H'FF H'FFFE040C 8 
+Standby control register 5 STBCR5 R/W H'FF H'FFFE0410 8 
+Standby control register 6 STBCR6 R/W H'FF H'FFFE0414 8 
+System control register 1 SYSCR1 R/W H'FF H'FFFE0402 8 
+System control register 2 SYSCR2 R/W H'FF H'FFFE0404 8 
+System control register 3 SYSCR3 R/W H'00 H'FFFE0418 8 
+Deep standby control register DSCTR R/W H'00 H'FFFF2800 8 
+Deep standby control register 2 DSCTR2 R/W H'00 H'FFFF2802 8 
+DSSSR R/W H'0000 H'FFFF2804 16 
+DSFR R/W H'0000 H'FFFF2808 16 
+DSRTR R/W H'00 H'FFFF280C 8 
+1: Addresses H'FFFF8000 and H'FFFF8004 
+Read PC from H'FFFF8000
+Read SP from H'FFFF8004
+H'FFFF8000 H'FFFF8004 
+Instruction register SDIR R H'EFFD H'FFFE2000 16 
+CPG Frequency control register FRQCR 16 H'FFFE0010 16 
+Interrupt control register 0 ICR0 16 H'FFFE0800 16, 32 
+Interrupt control register 1 ICR1 16 H'FFFE0802 16, 32 
+Interrupt control register 2 ICR2 16 H'FFFE0804 16, 32 
+IRQ interrupt request register IRQRR 16 H'FFFE0806 16, 32 
+PINT interrupt enable register PINTER 16 H'FFFE0808 16, 32 
+PINT interrupt request register PIRR 16 H'FFFE080A 16, 32 
+Bank control register IBCR 16 H'FFFE080C 16, 32 
+Bank number register IBNR 16 H'FFFE080E 16, 32 
+Interrupt priority register 01 IPR01 16 H'FFFE0818 16, 32 
+Interrupt priority register 02 IPR02 16 H'FFFE081A 16, 32 
+Interrupt priority register 05 IPR05 16 H'FFFE0820 16, 32 
+Interrupt priority register 06 IPR06 16 H'FFFE0C00 16, 32 
+Interrupt priority register 07 IPR07 16 H'FFFE0C02 16, 32 
+Interrupt priority register 08 IPR08 16 H'FFFE0C04 16, 32 
+Interrupt priority register 09 IPR09 16 H'FFFE0C06 16, 32 
+Interrupt priority register 10 IPR10 16 H'FFFE0C08 16, 32 
+Interrupt priority register 11 IPR11 16 H'FFFE0C0A 16, 32 
+Interrupt priority register 12 IPR12 16 H'FFFE0C0C 16, 32 
+Interrupt priority register 13 IPR13 16 H'FFFE0C0E 16, 32 
+Interrupt priority register 14 IPR14 16 H'FFFE0C10 16, 32 
+Interrupt priority register 15 IPR15 16 H'FFFE0C12 16, 32 
+Interrupt priority register 16 IPR16 16 H'FFFE0C14 16, 32 
+Interrupt priority register 17 IPR17 16 H'FFFE0C16 16, 32 
+Break address register_0 BAR_0 32 H'FFFC0400 32 
+Break address mask register_0 BAMR_0 32 H'FFFC0404 32 
+Break data register_0 BDR_0 32 H'FFFC0408 32 
+ Break data mask register_0 BDMR_0 32 H'FFFC040C 32 
+Break address register_1 BAR_1 32 H'FFFC0410 32 
+Break address mask register_1 BAMR_1 32 H'FFFC0414 32 
+Break data register_1 BDR_1 32 H'FFFC0418 32 
+Break data mask register_1 BDMR_1 32 H'FFFC041C 32 
+Break bus cycle register_0 BBR_0 16 H'FFFC04A0 16 
+Break bus cycle register_1 BBR_1 16 H'FFFC04B0 16 
+Break control register BRCR 32 H'FFFC04C0 32 
+Cache control register 1 CCR1 32 H'FFFC1000 32 Cache 
+Cache control register 2 CCR2 32 H'FFFC1004 32 
+Common control register CMNCR 32 H'FFFC0000 32 
+CS0 space bus control register CS0BCR 32 H'FFFC0004 32 
+CS1 space bus control register CS1BCR 32 H'FFFC0008 32 
+CS2 space bus control register CS2BCR 32 H'FFFC000C 32 
+CS3 space bus control register CS3BCR 32 H'FFFC0010 32 
+CS4 space bus control register CS4BCR 32 H'FFFC0014 32 
+CS5 space bus control register CS5BCR 32 H'FFFC0018 32 
+CS6 space bus control register CS6BCR 32 H'FFFC001C 32 
+CS7 space bus control register CS7BCR 32 H'FFFC0020 32 
+CS0 space wait control register CS0WCR 32 H'FFFC0028 32 
+CS1 space wait control register CS1WCR 32 H'FFFC002C 32 
+CS2 space wait control register CS2WCR 32 H'FFFC0030 32 
+CS3 space wait control register CS3WCR 32 H'FFFC0034 32 
+CS4 space wait control register CS4WCR 32 H'FFFC0038 32 
+CS5 space wait control register CS5WCR 32 H'FFFC003C 32 
+CS6 space wait control register CS6WCR 32 H'FFFC0040 32 
+CS7 space wait control register CS7WCR 32 H'FFFC0044 32 
+SDRAM control register SDCR 32 H'FFFC004C 32 
+RTCSR 32 H'FFFC0050 32 
+Refresh timer counter RTCNT 32 H'FFFC0054 32 
+ Refresh time constant register RTCOR 32 H'FFFC0058 32 
+DMA source address register_0 SAR0 32 H'FFFE1000 16, 32 
+DAR0 32 H'FFFE1004 16, 32 
+DMA transfer count register_0 DMATCR0 32 H'FFFE1008 16, 32 
+DMA channel control register_0 CHCR0 32 H'FFFE100C 8, 16, 32 
+RSAR0 32 H'FFFE1100 16, 32 
+RDAR0 32 H'FFFE1104 16, 32 
+RDMATCR0 32 H'FFFE1108 16, 32 
+DMA source address register_1 SAR1 32 H'FFFE1010 16, 32 
+DAR1 32 H'FFFE1014 16, 32 
+DMA transfer count register_1 DMATCR1 32 H'FFFE1018 16, 32 
+DMA channel control register_1 CHCR1 32 H'FFFE101C 8, 16, 32 
+RSAR1 32 H'FFFE1110 16, 32 
+RDAR1 32 H'FFFE1114 16, 32 
+RDMATCR1 32 H'FFFE1118 16, 32 
+DMA source address register_2 SAR2 32 H'FFFE1020 16, 32 
+DAR2 32 H'FFFE1024 16, 32 
+DMA transfer count register_2 DMATCR2 32 H'FFFE1028 16, 32 
+DMA channel control register_2 CHCR2 32 H'FFFE102C 8, 16, 32 
+RSAR2 32 H'FFFE1120 16, 32 
+RDAR2 32 H'FFFE1124 16, 32 
+RDMATCR2 32 H'FFFE1128 16, 32 
+DMA source address register_3 SAR3 32 H'FFFE1030 16, 32 
+DAR3 32 H'FFFE1034 16, 32 
+DMA transfer count register_3 DMATCR3 32 H'FFFE1038 16, 32 
+DMA channel control register_3 CHCR3 32 H'FFFE103C 8, 16, 32 
+RSAR3 32 H'FFFE1130 16, 32 
+RDAR3 32 H'FFFE1134 16, 32 
+RDMATCR3 32 H'FFFE1138 16, 32 
+DMA source address register_4 SAR4 32 H'FFFE1040 16, 32 
+DAR4 32 H'FFFE1044 16, 32 
+DMA transfer count register_4 DMATCR4 32 H'FFFE1048 16, 32 
+DMA channel control register_4 CHCR4 32 H'FFFE104C 8, 16, 32 
+RSAR4 32 H'FFFE1140 16, 32 
+RDAR4 32 H'FFFE1144 16, 32 
+RDMATCR4 32 H'FFFE1148 16, 32 
+DMA source address register_5 SAR5 32 H'FFFE1050 16, 32 
+DAR5 32 H'FFFE1054 16, 32 
+DMA transfer count register_5 DMATCR5 32 H'FFFE1058 16, 32 
+DMA channel control register_5 CHCR5 32 H'FFFE105C 8, 16, 32 
+RSAR5 32 H'FFFE1150 16, 32 
+RDAR5 32 H'FFFE1154 16, 32 
+RDMATCR5 32 H'FFFE1158 16, 32 
+DMA source address register_6 SAR6 32 H'FFFE1060 16, 32 
+DAR6 32 H'FFFE1064 16, 32 
+DMA transfer count register_6 DMATCR6 32 H'FFFE1068 16, 32 
+DMA channel control register_6 CHCR6 32 H'FFFE106C 8, 16, 32 
+RSAR6 32 H'FFFE1160 16, 32 
+RDAR6 32 H'FFFE1164 16, 32 
+RDMATCR6 32 H'FFFE1168 16, 32 
+DMA source address register_7 SAR7 32 H'FFFE1070 16, 32 
+DAR7 32 H'FFFE1074 16, 32 
+DMA transfer count register_7 DMATCR7 32 H'FFFE1078 16, 32 
+DMA channel control register_7 CHCR7 32 H'FFFE107C 8, 16, 32 
+RSAR7 32 H'FFFE1170 16, 32 
+RDAR7 32 H'FFFE1174 16, 32 
+RDMATCR7 32 H'FFFE1178 16, 32 
+DMA operation register DMAOR 16 H'FFFE1200 8, 16 
+DMA extension resource selector 0 DMARS0 16 H'FFFE1300 16 
+DMA extension resource selector 1 DMARS1 16 H'FFFE1304 16 
+DMA extension resource selector 2 DMARS2 16 H'FFFE1308 16 
+DMA extension resource selector 3 DMARS3 16 H'FFFE130C 16 
+Timer control register_0 TCR_0 8 H'FFFE4300 8 
+Timer mode register_0 TMDR_0 8 H'FFFE4301 8 
+Timer I/O control register H_0 TIORH_0 8 H'FFFE4302 8 
+Timer I/O control register L_0 TIORL_0 8 H'FFFE4303 8 
+Timer interrupt enable register_0 TIER_0 8 H'FFFE4304 8 
+ Timer status register_0 TSR_0 8 H'FFFE4305 8 
+Timer counter_0 TCNT_0 16 H'FFFE4306 16 
+Timer general register A_0 TGRA_0 16 H'FFFE4308 16 
+Timer general register B_0 TGRB_0 16 H'FFFE430A 16 
+Timer general register C_0 TGRC_0 16 H'FFFE430C 16 
+Timer general register D_0 TGRD_0 16 H'FFFE430E 16 
+Timer general register E_0 TGRE_0 16 H'FFFE4320 16 
+Timer general register F_0 TGRF_0 16 H'FFFE4322 16 
+Timer interrupt enable register2_0 TIER2_0 8 H'FFFE4324 8 
+Timer status register2_0 TSR2_0 8 H'FFFE4325 8 
+TBTM_0 8 H'FFFE4326 8 
+Timer control register_1 TCR_1 8 H'FFFE4380 8 
+Timer mode register_1 TMDR_1 8 H'FFFE4381 8 
+Timer I/O control register_1 TIOR_1 8 H'FFFE4382 8 
+Timer interrupt enable register_1 TIER_1 8 H'FFFE4384 8 
+Timer status register_1 TSR_1 8 H'FFFE4385 8 
+Timer counter_1 TCNT_1 16 H'FFFE4386 16 
+Timer general register A_1 TGRA_1 16 H'FFFE4388 16 
+Timer general register B_1 TGRB_1 16 H'FFFE438A 16 
+Timer input capture control register TICCR 8 H'FFFE4390 8 
+Timer control register_2 TCR_2 8 H'FFFE4000 8 
+Timer mode register_2 TMDR_2 8 H'FFFE4001 8 
+Timer I/O control register_2 TIOR_2 8 H'FFFE4002 8 
+Timer interrupt enable register_2 TIER_2 8 H'FFFE4004 8 
+Timer status register_2 TSR_2 8 H'FFFE4005 8 
+Timer counter_2 TCNT_2 16 H'FFFE4006 16 
+Timer general register A_2 TGRA_2 16 H'FFFE4008 16 
+Timer general register B_2 TGRB_2 16 H'FFFE400A 16 
+Timer control register_3 TCR_3 8 H'FFFE4200 8 
+Timer mode register_3 TMDR_3 8 H'FFFE4202 8 
+ Timer I/O control register H_3 TIORH_3 8 H'FFFE4204 8 
+Timer I/O control register L_3 TIORL_3 8 H'FFFE4205 8 
+Timer interrupt enable register_3 TIER_3 8 H'FFFE4208 8 
+Timer status register_3 TSR_3 8 H'FFFE422C 8 
+Timer counter_3 TCNT_3 16 H'FFFE4210 16 
+Timer general register A_3 TGRA_3 16 H'FFFE4218 16 
+Timer general register B_3 TGRB_3 16 H'FFFE421A 16 
+Timer general register C_3 TGRC_3 16 H'FFFE4224 16 
+Timer general register D_3 TGRD_3 16 H'FFFE4226 16 
+TBTM_3 8 H'FFFE4238 8 
+Timer control register_4 TCR_4 8 H'FFFE4201 8 
+Timer mode register_4 TMDR_4 8 H'FFFE4203 8 
+Timer I/O control register H_4 TIORH_4 8 H'FFFE4206 8 
+Timer I/O control register L_4 TIORL_4 8 H'FFFE4207 8 
+Timer interrupt enable register_4 TIER_4 8 H'FFFE4209 8 
+Timer status register_4 TSR_4 8 H'FFFE422D 8 
+Timer counter_4 TCNT_4 16 H'FFFE4212 16 
+Timer general register A_4 TGRA_4 16 H'FFFE421C 16 
+Timer general register B_4 TGRB_4 16 H'FFFE421E 16 
+Timer general register C_4 TGRC_4 16 H'FFFE4228 16 
+Timer general register D_4 TGRD_4 16 H'FFFE422A 16 
+TBTM_4 8 H'FFFE4239 8 
+TADCR 16 H'FFFE4240 16 
+TADCORA_4 16 H'FFFE4242 16 
+TADCORB_4 16 H'FFFE4244 16 
+TADCOBRA_4 16 H'FFFE4246 16 
+TADCOBRB_4 16 H'FFFE4248 16 
+Timer start register TSTR 8 H'FFFE4280 8 
+Timer synchronous register  TSYR 8 H'FFFE4281 8 
+Timer read/write enable register TRWER 8 H'FFFE4284 8 
+TOER 8 H'FFFE420A 8 
+Timer output control register 1 TOCR1 8 H'FFFE420E 8 
+Timer output control register 2 TOCR2 8 H'FFFE420F 8 
+Timer gate control register TGCR 8 H'FFFE420D 8 
+Timer cycle control register TCDR 16 H'FFFE4214 16 
+Timer dead time data register TDDR 16 H'FFFE4216 16 
+Timer subcounter TCNTS 16 H'FFFE4220 16 
+Timer cycle buffer register TCBR 16 H'FFFE4222 16 
+TITCR 8 H'FFFE4230 8 
+Timer interrupt skipping counter TITCNT 8 H'FFFE4231 8 
+Timer buffer transfer set register TBTER 8 H'FFFE4232 8 
+Timer dead time enable register TDER 8 H'FFFE4234 8 
+Timer waveform control register TWCR 8 H'FFFE4260 8 
+Timer output level buffer register TOLBR 8 H'FFFE4236 8 
+Compare match timer start register CMSTR 16 H'FFFEC000 16 
+CMCSR0 16 H'FFFEC002 16 
+Compare match counter_0 CMCNT0 16 H'FFFEC004 8, 16 
+CMCOR0 16 H'FFFEC006 8, 16 
+CMCSR1 16 H'FFFEC008 16 
+Compare match counter_1 CM CNT1 16 H'FFFEC00A 8, 16 
+CMCOR1 16 H'FFFEC00C 8, 16 
+WTCSR 8 H'FFFE0000 8, 16 
+Watchdog timer counter WTCNT 8 H'FFFE0002 8, 16 
+WRCSR 8 H'FFFE0004 8, 16 
+64-Hz counter R64CNT 8 H'FFFF2000 8 
+Second counter RSECCNT 8 H'FFFF2002 8 
+Minute counter RMINCNT 8 H'FFFF2004 8 
+Hour counter RHRCNT 8 H'FFFF2006 8 
+Day of week counter RWKCNT 8 H'FFFF2008 8 
+Date counter RDAYCNT 8 H'FFFF200A 8 
+Month counter RMONCNT 8 H'FFFF200C 8 
+Year counter RYRCNT 16 H'FFFF200E 16 
+Second alarm register RSECAR 8 H'FFFF2010 8 
+Minute alarm register RMINAR 8 H'FFFF2012 8 
+Hour alarm register RHRAR 8 H'FFFF2014 8 
+Day of week alarm register RWKAR 8 H'FFFF2016 8 
+Date alarm register RDAYAR 8 H'FFFF2018 8 
+Month alarm register RMONAR 8 H'FFFF201A 8 
+Year alarm register RYRAR 16 H'FFFF2020 16 
+RTC control register 1 RCR1 8 H'FFFF201C 8 
+RTC control register 2 RCR2 8 H'FFFF201E 8 
+RTC control register 3  RCR3 8 H'FFFF2024 8 
+Serial mode register_0 SCSMR_0 16 H'FFFE8000 16 
+Bit rate register_0 SCBRR_0 8 H'FFFE8004 8 
+Serial control register_0 SCSCR_0 16 H'FFFE8008 16 
+Transmit FIFO data register_0 SCFTDR_0 8 H'FFFE800C 8 
+Serial status register_0 SCFSR_0 16 H'FFFE8010 16 
+Receive FIFO data register_0 SCFRDR_0 8 H'FFFE8014 8 
+FIFO control register_0 SCFCR_0 16 H'FFFE8018 16 
+FIFO data count register_0 SCFDR_0 16 H'FFFE801C 16 
+ Serial port register_0 SCSPTR_0 16 H'FFFE8020 16 
+Line status register_0 SCLSR_0 16 H'FFFE8024 16 
+Serial extension mode register_0 SCEMR_0 16 H'FFFE8028 16 
+Serial mode register_1 SCSMR_1 16 H'FFFE8800 16 
+Bit rate register_1 SCBRR_1 8 H'FFFE8804 8 
+Serial control register_1 SCSCR_1 16 H'FFFE8808 16 
+Transmit FIFO data register_1 SCFTDR_1 8 H'FFFE880C 8 
+Serial status register_1 SCFSR_1 16 H'FFFE8810 16 
+Receive FIFO data register_1 SCFRDR_1 8 H'FFFE8814 8 
+FIFO control register_1 SCFCR_1 16 H'FFFE8818 16 
+FIFO data count register_1 SCFDR_1 16 H'FFFE881C 16 
+Serial port register_1 SCSPTR_1 16 H'FFFE8820 16 
+Line status register_1 SCLSR_1 16 H'FFFE8824 16 
+Serial extension mode register_1 SCEMR_1 16 H'FFFE8828 16 
+Serial mode register_2 SCSMR_2 16 H'FFFE9000 16 
+Bit rate register_2 SCBRR_2 8 H'FFFE9004 8 
+Serial control register_2 SCSCR_2 16 H'FFFE9008 16 
+Transmit FIFO data register_2 SCFTDR_2 8 H'FFFE900C 8 
+Serial status register_2 SCFSR_2 16 H'FFFE9010 16 
+Receive FIFO data register_2 SCFRDR_2 8 H'FFFE9014 8 
+FIFO control register_2 SCFCR_2 16 H'FFFE9018 16 
+FIFO data count register_2 SCFDR_2 16 H'FFFE901C 16 
+Serial port register_2 SCSPTR_2 16 H'FFFE9020 16 
+Line status register_2 SCLSR_2 16 H'FFFE9024 16 
+Serial extension mode register_2 SCEMR_2 16 H'FFFE9028 16 
+Serial mode register_3 SCSMR_3 16 H'FFFE9800 16 
+Bit rate register_3 SCBRR_3 8 H'FFFE9804 8 
+Serial control register_3 SCSCR_3 16 H'FFFE9808 16 
+Transmit FIFO data register_3 SCFTDR_3 8 H'FFFE980C 8 
+Serial status register_3 SCFSR_3 16 H'FFFE9810 16 
+Receive FIFO data register_3 SCFRDR_3 8 H'FFFE9814 8 
+ FIFO control register_3 SCFCR_3 16 H'FFFE9818 16 
+FIFO data count register_3 SCFDR_3 16 H'FFFE981C 16 
+Serial port register_3 SCSPTR_3 16 H'FFFE9820 16 
+Line status register_3 SCLSR_3 16 H'FFFE9824 16 
+Serial extension mode register_3 SCEMR_3 16 H'FFFE9828 16 
+SS control register H_0 SSCRH_0 8 H'FFFE7000 8, 16 
+SS control register L_0 SSCRL_0 8 H'FFFE7001 8 
+SS mode register_0 SSMR_0 8 H'FFFE7002 8, 16 
+SS enable register_0 SSER_0 8 H'FFFE7003 8 
+SS status register_0 SSSR_0 8 H'FFFE7004 8, 16 
+SS control register 2_0 SSCR2_0 8 H'FFFE7005 8 
+SS transmit data register 0_0 SSTDR0_0 8 H'FFFE7006 8, 16 
+SS transmit data register 1_0 SSTDR1_0 8 H'FFFE7007 8 
+SS transmit data register 2_0 SSTDR2_0 8 H'FFFE7008 8, 16 
+SS transmit data register 3_0 SSTDR3_0 8 H'FFFE7009 8 
+SS receive data register 0_0 SSRDR0_0 8 H'FFFE700A 8, 16 
+SS receive data register 1_0 SSRDR1_0 8 H'FFFE700B 8 
+SS receive data register 2_0 SSRDR2_0 8 H'FFFE700C 8, 16 
+SS receive data register 3_0 SSRDR3_0 8 H'FFFE700D 8 
+SS control register H_1 SSCRH_1 8 H'FFFE7800 8, 16 
+SS control register L_1 SSCRL_1 8 H'FFFE7801 8 
+SS mode register_1 SSMR_1 8 H'FFFE7802 8, 16 
+SS enable register_1 SSER_1 8 H'FFFE7803 8 
+SS status register_1 SSSR_1 8 H'FFFE7804 8, 16 
+SS control register 2_1 SSCR2_1 8 H'FFFE7805 8 
+SS transmit data register 0_1 SSTDR0_1 8 H'FFFE7806 8, 16 
+SS transmit data register 1_1 SSTDR1_1 8 H'FFFE7807 8 
+SS transmit data register 2_1 SSTDR2_1 8 H'FFFE7808 8, 16 
+SS transmit data register 3_1 SSTDR3_1 8 H'FFFE7809 8 
+SS receive data register 0_1 SSRDR0_1 8 H'FFFE780A 8, 16 
+SS receive data register 1_1 SSRDR1_1 8 H'FFFE780B 8 
+ SS receive data register 2_1 SSRDR2_1 8 H'FFFE780C 8, 16 
+SSU SS receive data register 3_1 SSRDR3_1 8 H'FFFE780D 8 
+C bus control register 1 ICCR1_0 8 H'FFFEE000 8 
+C bus control register 2 ICCR2_0 8 H'FFFEE001 8 
+C bus mode register ICMR_0 8 H'FFFEE002 8 
+C bus interrupt enable register ICIER_0 8 H'FFFEE003 8 
+C bus status register ICSR_0 8 H'FFFEE004 8 
+Slave address register SAR_0 8 H'FFFEE005 8 
+C bus transmit data register ICDRT_0 8 H'FFFEE006 8 
+C bus receive data register ICDRR_0 8 H'FFFEE007 8 
+NF2CYC register NF2CYC_0 8 H'FFFEE008 8 
+C bus control register 1 ICCR1_1 8 H'FFFEE400 8 
+C bus control register 2 ICCR2_1 8 H'FFFEE401 8 
+C bus mode register ICMR_1 8 H'FFFEE402 8 
+C bus interrupt enable register ICIER_1 8 H'FFFEE403 8 
+C bus status register ICSR_1 8 H'FFFEE404 8 
+Slave address register SAR_1 8 H'FFFEE405 8 
+C bus transmit data register ICDRT_1 8 H'FFFEE406 8 
+C bus receive data register ICDRR_1 8 H'FFFEE407 8 
+NF2CYC register NF2CYC_1 8 H'FFFEE408 8 
+C bus control register 1 ICCR1_2 8 H'FFFEE800 8 
+C bus control register 2 ICCR2_2 8 H'FFFEE801 8 
+C bus mode register ICMR_2 8 H'FFFEE802 8 
+C bus interrupt enable register ICIER_2 8 H'FFFEE803 8 
+C bus status register ICSR_2 8 H'FFFEE804 8 
+Slave address register SAR_2 8 H'FFFEE805 8 
+C bus transmit data register ICDRT_2 8 H'FFFEE806 8 
+C bus receive data register ICDRR_2 8 H'FFFEE807 8 
+NF2CYC register NF2CYC_2 8 H'FFFEE808 8 
+C bus control register 1 ICCR1_3 8 H'FFFEEC00 8 
+C bus control register 2 ICCR2_3 8 H'FFFEEC01 8 
+C bus mode register ICMR_3 8 H'FFFEEC02 8 
+C bus interrupt enable register ICIER_3 8 H'FFFEEC03 8 
+C bus status register ICSR_3 8 H'FFFEEC04 8 
+Slave address register SAR_3 8 H'FFFEEC05 8 
+C bus transmit data register ICDRT_3 8 H'FFFEEC06 8 
+C bus receive data register ICDRR_3 8 H'FFFEEC07 8 
+NF2CYC register NF2CYC_3 8 H'FFFEEC08 8 
+Control register 0 SSICR_0 32 H'FFFFC000 32 
+Status register 0 SSISR_0 32 H'FFFFC004 32 
+Transmit data register 0 SSITDR_0 32 H'FFFFC008 32 
+Receive data register 0 SSIRDR_0 32 H'FFFFC00C 32 
+Control register 1 SSICR_1 32 H'FFFFC800 32 
+Status register 1 SSISR_1 32 H'FFFFC804 32 
+Transmit data register 1 SSITDR_1 32 H'FFFFC808 32 
+Receive data register 1 SSIRDR_1 32 H'FFFFC80C 32 
+Control register 2 SSICR_2 32 H'FFFFD000 32 
+Status register 2 SSISR_2 32 H'FFFFD004 32 
+Transmit data register 2 SSITDR_2 32 H'FFFFD008 32 
+Receive data register 2 SSIRDR_2 32 H'FFFFD00C 32 
+Control register 3 SSICR_3 32 H'FFFFD800 32 
+Status register 3 SSISR_3 32 H'FFFFD804 32 
+Transmit data register 3 SSITDR_3 32 H'FFFFD808 32 
+Receive data register 3 SSIRDR_3 32 H'FFFFD80C 32 
+Master Control Register_0 MCR_0 16 H'FFFF0000 16 
+General Status Register_0 GSR_0 16 H'FFFF0002 16 
+Bit Configuration Register 1_0 BCR1_0 16 H'FFFF0004 16 
+Bit Configuration Register 0_0 BCR0_0 16 H'FFFF0006 16 
+Interrupt Register_0 IRR_0 16 H'FFFF0008 16 
+Interrupt Mask Register_0 IMR_0 16 H'FFFF000A 16 
+Error Counter Register_0 TEC_REC_0 16 H'FFFF000C 8, 16 
+Transmit Pending Register 1_0 TXPR1_0 16 H'FFFF0020 32 
+ Transmit Pending Register 0_0 TXPR0_0 16 H'FFFF0022 16 
+Transmit Cancel Register 1_0 TXCR1_0 16 H'FFFF0028 16 
+Transmit Cancel Register 0_0 TXCR0_0 16 H'FFFF002A 16 
+TXACK1_0 16 H'FFFF0030 16 
+TXACK0_0 16 H'FFFF0032 16 
+Abort Acknowledge Register 1_0 ABACK1_0 16 H'FFFF0038 16 
+Abort Acknowledge Register 0_0 ABACK0_0 16 H'FFFF003A 16 
+RXPR1_0 16 H'FFFF0040 16 
+RXPR0_0 16 H'FFFF0042 16 
+RFPR1_0 16 H'FFFF0048 16 
+RFPR0_0 16 H'FFFF004A 16 
+MBIMR1_0 16 H'FFFF0050 16 
+MBIMR0_0 16 H'FFFF0052 16 
+UMSR1_0 16 H'FFFF0058 16 
+UMSR0_0 16 H'FFFF005A 16 
+Timer Trigger Control Register 0_0 TTCR0_0 16 H'FFFF0080 16 
+CMAX_TEW_0 16 H'FFFF0084 16 
+RFTROFF_0 16 H'FFFF0086 16 
+Timer Status Register_0 TSR_0 16 H'FFFF0088 16 
+Cycle Counter Register_0 CCR_0 16 H'FFFF008A 16 
+Timer Counter Register_0 TCNTR_0 16 H'FFFF008C 16 
+Cycle Time Register_0 CYCTR_0 16 H'FFFF0090 16 
+ Reference Mark Register_0 RFMK_0 16 H'FFFF0094 16 
+Timer Compare Match Register 0_0 TCMR0_0 16 H'FFFF0098 16 
+Timer Compare Match Register 1_0 TCMR1_0 16 H'FFFF009C 16 
+Timer Compare Match Register 2_0 TCMR2_0 16 H'FFFF00A0 16 
+TTTSEL_0 16 H'FFFF00A4 16 
+16 H'FFFF0100 
+16 H'FFFF0102 
+16 H'FFFF0104 
+16 H'FFFF0106 
+16 H'FFFF0108 
+16 H'FFFF010A 
+16 H'FFFF010C 
+16 H'FFFF010E 
+16 H'FFFF0110 
+16 H'FFFF0112 + 
+16 H'FFFF0114 
+16 H'FFFF0116 
+Master Control Register_1 MCR_1 16 H'FFFF0800 16 
+General Status Register_1 GSR_1 16 H'FFFF0802 16 
+Bit Configuration Register 1_1 BCR1_1 16 H'FFFF0804 16 
+Bit Configuration Register 0_1 BCR0_1 16 H'FFFF0806 16 
+Interrupt Register_1 IRR_1 16 H'FFFF0808 16 
+ Interrupt Mask Register_1 IMR_1 16 H'FFFF080A 16 
+Error Counter Register_1 TEC_REC_1 16 H'FFFF080C 8, 16 
+Transmit Pending Register 1_1 TXPR1_1 16 H'FFFF0820 32 
+Transmit Pending Register 0_1 TXPR0_1 16 H'FFFF0822 16 
+Transmit Cancel Register 1_1 TXCR1_1 16 H'FFFF0828 16 
+Transmit Cancel Register 0_1 TXCR0_1 16 H'FFFF082A 16 
+TXACK1_1 16 H'FFFF0830 16 
+TXACK0_1 16 H'FFFF0832 16 
+Abort Acknowledge Register 1_1 ABACK1_1 16 H'FFFF0838 16 
+Abort Acknowledge Register 0_1 ABACK0_1 16 H'FFFF083A 16 
+RXPR1_1 16 H'FFFF0840 16 
+RXPR0_1 16 H'FFFF0842 16 
+RFPR1_1 16 H'FFFF0848 16 
+RFPR0_1 16 H'FFFF084A 16 
+MBIMR1_1 16 H'FFFF0850 16 
+MBIMR0_1 16 H'FFFF0852 16 
+UMSR1_1 16 H'FFFF0858 16 
+UMSR0_1 16 H'FFFF085A 16 
+Timer Trigger Control Register 0_1 TTCR0_1 16 H'FFFF0880 16 
+CMAX_TEW_1 16 H'FFFF0884 16 
+RFTROFF_1 16 H'FFFF0886 16 
+Timer Status Register_1 TSR_1 16 H'FFFF0888 16 
+Cycle Counter Register_1 CCR_1 16 H'FFFF088A 16 
+ Timer Counter Register_1 TCNTR_1 16 H'FFFF088C 16 
+Cycle Time Register_1 CYCTR_1 16 H'FFFF0890 16 
+Reference Mark Register_1 RFMK_1 16 H'FFFF0894 16 
+Timer Compare Match Register 0_1 TCMR0_1 16 H'FFFF0898 16 
+Timer Compare Match Register 1_1 TCMR1_1 16 H'FFFF089C 16 
+Timer Compare Match Register 2_1 TCMR2_1 16 H'FFFF08A0 16 
+TTTSEL_1 16 H'FFFF08A4 16 
+16 H'FFFF0900 
+16 H'FFFF0902 
+16 H'FFFF0904 
+16 H'FFFF0906 
+16 H'FFFF0908 
+16 H'FFFF090A 
+16 H'FFFF090C 
+16 H'FFFF090E 
+16 H'FFFF0910 
+16 H'FFFF0912 
+16 H'FFFF0914 
+16 H'FFFF0916 
+A/D data register A ADDRA 16 H'FFFE5800 16 
+A/D data register B ADDRB 16 H'FFFE5802 16 
+A/D data register C ADDRC 16 H'FFFE5804 16 
+A/D data register D ADDRD 16 H'FFFE5806 16 
+A/D data register E ADDRE 16 H'FFFE5808 16 
+A/D data register F ADDRF 16 H'FFFE580A 16 
+A/D data register G ADDRG 16 H'FFFE580C 16 
+A/D data register H ADDRH 16 H'FFFE580E 16 
+A/D control/status register ADCSR 16 H'FFFE5820 16 
+D/A data register 0 DADR0 8 H'FFFE6800 8, 16 
+D/A data register 1 DADR1 8 H'FFFE6801 8, 16 
+D/A control register DACR 8 H'FFFE6802 8, 16 
+Common control register FLCMNCR 32 H'FFFFF000 32 
+Command control register FLCMDCR 32 H'FFFFF004 32 
+Command code register FLCMCDR 32 H'FFFFF008 32 
+Address register FLADR 32 H'FFFFF00C 32 
+Address register 2 FLADR2 32 H'FFFFF03C 32 
+Data register FLDATAR 32 H'FFFFF010 32 
+Data counter register FLDTCNTR 32 H'FFFFF014 32 
+Interrupt DMA control register FLINTDMACR 32 H'FFFFF018 32 
+FLBSYTMR 32 H'FFFFF01C 32 
+Ready busy timeout counter FLBSYCNT 32 H'FFFFF020 32 
+Data FIFO register FLDTFIFO 32 H'FFFFF050 32 
+Control code FIFO register FLECFIFO 32 H'FFFFF060 32 
+Transfer control register FLTRCR 8 H'FFFFF02C 8 
+SYSCFG 16 H'FFFC1C00 16 
+SYSSTS 16 H'FFFC1C02 16 
+Device state control register DVSTCTR 16 H'FFFC1C04 16 
+ Test mode register TESTMODE 16 H'FFFC1C06 16 
+CFBCFG 16 H'FFFC1C0A 16 
+D0FBCFG 16 H'FFFC1C0C 16 
+D1FBCFG 16 H'FFFC1C0E 16 
+CFIFO port register CFIFO 32 H'FFFC1C10 8, 16, 32 
+D0FIFO port register D0FIFO 32 H'FFFC1C14 8, 16, 32 
+D1FIFO port register D1FIFO 32 H'FFFC1C18 8, 16, 32 
+CFIFO port select register CFIFOSEL 16 H'FFFC1C1E 16 
+CFIFO port control register CFIFOCTR 16 H'FFFC1C20 16 
+CFIFO port SIE register CFIFOSIE 16 H'FFFC1C22 16 
+D0FIFO port select register D0FIFOSEL 16 H'FFFC1C24 16 
+D0FIFO port control register D0FIFOCTR 16 H'FFFC1C26 16 
+D0 transaction counter register D0FIFOTRN 16 H'FFFC1C28 16 
+D1FIFO port select register D1FIFOSEL 16 H'FFFC1C2A 16 
+D1FIFO port control register D1FIFOCTR 16 H'FFFC1C2C 16 
+D1 transaction counter register D1FIFOTRN 16 H'FFFC1C2E 16 
+Interrupt enable register 0 INTENB0 16 H'FFFC1C30 16 
+Interrupt enable register 1 INTENB1 16 H'FFFC1C32 16 
+BRDY interrupt enable register BRDYENB 16 H'FFFC1C36 16 
+NRDY interrupt enable register NRDYENB 16 H'FFFC1C38 16 
+BEMP interrupt enable register BEMPENB 16 H'FFFC1C3A 16 
+Interrupt status register 0 INTSTS0 16 H'FFFC1C40 16 
+Interrupt status register 1 INTSTS1 16 H'FFFC1C42 16 
+BRDY interrupt status register BRDYSTS 16 H'FFFC1C46 16 
+NRDY interrupt status register NRDYSTS 16 H'FFFC1C48 16 
+BEMP interrupt status register BEMPSTS 16 H'FFFC1C4A 16 
+Frame number register FRMNUM 16 H'FFFC1C4C 16 
+μFrame number register UFRMNUM 16 H'FFFC1C4E 16 
+USB address register USBA DDR 16 H'FFFC1C50 16 
+ USB request type register USBREQ 16 H'FFFC1C54 16 
+USB request value register USBVAL 16 H'FFFC1C56 16 
+USB request index register USBINDX 16 H'FFFC1C58 16 
+USB request length register USBLENG 16 H'FFFC1C5A 16 
+DCP configuration register DCPCFG 16 H'FFFC1C5C 16 
+DCP maximum packet size register DCPMAXP 16 H'FFFC1C5E 16 
+DCP control register DCPCTR 16 H'FFFC1C60 16 
+Pipe window select register PIPESEL 16 H'FFFC1C64 16 
+Pipe configuration register PIPECFG 16 H'FFFC1C66 16 
+Pipe buffer setting register PIPEBUF 16 H'FFFC1C68 16 
+Pipe maximum packet size register PIPEMAXP 16 H'FFFC1C6A 16 
+Pipe cycle control register PIPEPERI 16 H'FFFC1C6C 16 
+Pipe 1 control register PIPE1CTR 16 H'FFFC1C70 16 
+Pipe 2 control register PIPE2CTR 16 H'FFFC1C72 16 
+Pipe 3 control register PIPE3CTR 16 H'FFFC1C74 16 
+Pipe 4 control register PIPE4CTR 16 H'FFFC1C76 16 
+Pipe 5 control register PIPE5CTR 16 H'FFFC1C78 16 
+Pipe 6 control register PIPE6CTR 16 H'FFFC1C7A 16 
+Pipe 7 control register PIPE7CTR 16 H'FFFC1C7C 16 
+USBACSWR 32 H'FFFC1C84 32 
+LCDC scan mode register LDSMR 16 H'FFFFFC06 16 
+LDSARU 32 H'FFFFFC08 32 
+LDSARL 32 H'FFFFFC0C 32 
+LDLAOR 16 H'FFFFFC10 16 
+Palette data register 00 to FF LDPR00 to FF 32 H'FFFFF800 to  
+H'FFFFFBFC 
+LDHSYNR 16 H'FFFFFC16 16 
+LDVDLNR 16 H'FFFFFC18 16 
+LDVTLNR 16 H'FFFFFC1A 16 
+LDVSYNR 16 H'FFFFFC1C 16 
+LDACLNR 16 H'FFFFFC1E 16 
+LDPMMR 16 H'FFFFFC24 16 
+LDPSPR 16 H'FFFFFC26 16 
+LCDC control register LDCNTR 16 H'FFFFFC28 16 
+LDUINTR 16 H'FFFFFC34 16 
+LDUINTLNR 16 H'FFFFFC36 16 
+LDLIRNR 16 H'FFFFFC40 16 
+Port B I/O register L PBIORL 16 H'FFFE3886 8, 16 
+Port B control register L4 PBCRL4 16 H'FFFE3890 16, 32 
+Port B control register L3 PBCRL3 16 H'FFFE3892 8, 16 
+Port B control register L2 PBCRL2 16 H'FFFE3894 8, 16, 32 
+ Port B control register L1 PBCRL1 16 H'FFFE3896 8, 16 
+ IRQOUT function control regi ster IFCR 16 H'FFFE38A2 8, 16 
+Port C I/O register L PCIORL 16 H'FFFE3906 8, 16 
+Port C control register L4 PCCRL4 16 H'FFFE3910 8, 16, 32 
+Port C control register L3 PCCRL3 16 H'FFFE3912 8, 16 
+Port C control register L2 PCCRL2 16 H'FFFE3914 8, 16, 32 
+Port C control register L1 PCCRL1 16 H'FFFE3916 8, 16 
+Port D I/O register L PDIORL 16 H'FFFE3986 8, 16 
+Port D control register L4 PDCRL4 16 H'FFFE3990 8, 16, 32 
+Port D control register L3 PDCRL3 16 H'FFFE3992 8, 16 
+Port D control register L2 PDCRL2 16 H'FFFE3994 8, 16, 32 
+Port D control register L1 PDCRL1 16 H'FFFE3996 8, 16 
+Port E I/O register L PEIORL 16 H'FFFE3A06 8, 16 
+Port E control register L4 PECRL4 16 H'FFFE3A10 8, 16, 32 
+Port E control register L3 PECRL3 16 H'FFFE3A12 8, 16 
+Port E control register L2 PECRL2 16 H'FFFE3A14 8, 16, 32 
+Port E control register L1 PECRL1 16 H'FFFE3A16 8, 16 
+Port F I/O register H PFIORH 16 H'FFFE3A84 8, 16, 32 
+Port F I/O register L PFIORL 16 H'FFFE3A86 8, 16 
+Port F control register H4 PFCRH4 16 H'FFFE3A88 8, 16, 32 
+Port F control register H3 PFCRH3 16 H'FFFE3A8A 8, 16 
+Port F control register H2 PFCRH2 16 H'FFFE3A8C 8, 16, 32 
+Port F control register H1 PFCRH1 16 H'FFFE3A8E 8, 16 
+Port F control register L4 PFCRL4 16 H'FFFE3A90 8, 16, 32 
+Port F control register L3 PFCRL3 16 H'FFFE3A92 8, 16 
+Port F control register L2 PFCRL2 16 H'FFFE3A94 8, 16, 32 
+Port F control register L1 PFCRL1 16 H'FFFE3A96 8, 16 
+SCSR 16 H'FFFE3AA2 8, 16 
+Port A data register L PADRL 16 H'FFFE3802 8, 16 
+Port B data register L PBDRL 16 H'FFFE3882 8, 16 
+Port B port register L PBPRL 16 H'FFFE389E 8, 16 
+Port C data register L PCDRL 16 H'FFFE3902 8, 16 
+Port C port register L PCPRL 16 H'FFFE391E 8, 16 
+Port D data register L PDDRL 16 H'FFFE3982 8, 16 
+Port D port register L PDPRL 16 H'FFFE399E 8, 16 
+Port E data register L PEDRL 16 H'FFFE3A02 8, 16 
+Port E port register L PEPRL 16 H'FFFE3A1E 8, 16 
+Port F data register H PFDRH 16 H'FFFE3A80 8, 16, 32 
+Port F data register L PFDRL 16 H'FFFE3A82 8, 16 
+Port F port register H PF PRH 16 H'FFFE3A9C 8, 16, 32 
+Port F port register L PFPRL 16 H'FFFE3A9E 8, 16 
+Standby control register STBCR 8 H'FFFE0014 8 
+Standby control register 2 STBCR2 8 H'FFFE0018 8 
+Standby control register 3 STBCR3 8 H'FFFE0408 8 
+Standby control register 4 STBCR4 8 H'FFFE040C 8 
+Standby control register 5 STBCR5 8 H'FFFE0410 8 
+Standby control register 6 STBCR6 8 H'FFFE0414 8 
+System control register 1 SYSCR1 8 H'FFFE0402 8 
+System control register 2 SYSCR2 8 H'FFFE0404 8 
+System control register 3 SYSCR3 8 H'FFFE0418 8 
+Deep standby control register DSCTR 8 H'FFFF2800 8 
+Deep standby control register 2 DSCTR2 8 H'FFFF2802 8 
+DSSSR 16 H'FFFF2804 16 
+DSFR 16 H'FFFF2808 16 
+DSRTR 8 H'FFFF280C 8 
+H-UDI Instruction register SDIR 16 H'FFFE2000 16 
+H'40000000 to H'FFFBFFFF Other On-chip RAM, reserved area * ⎯ 
+H'FFFC0000 to H'FFFFFFFF Other On-chip peripheral modules, reserved area * ⎯ 
+WTCSR  8 H'FFFE0000 8, 16 
+Watchdog timer counter WTCNT 8 H'FFFE0002 8, 16 
+WRCSR  8 H'FFFE0004 8, 16 

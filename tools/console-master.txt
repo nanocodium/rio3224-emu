@@ -1,0 +1,4 @@
+30000 mms
+30500 getprm SYSTEM Dev/PanelHeadAmp/48VMasterOn 0 0
+31000 set 48v 0 1
+31500 getprm SYSTEM Dev/InputChannel/48VOn 0 0

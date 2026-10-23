@@ -1,0 +1,111 @@
+ 11 NMI          IPR01 shift 12
+ 12 UBC          IPR01 shift 12
+ 64 IRQ0         IPR01 shift 12
+ 65 IRQ1         IPR01 shift 8
+ 66 IRQ2         IPR01 shift 4
+ 67 IRQ3         IPR01 shift 0
+ 68 IRQ4         IPR02 shift 12
+ 69 IRQ5         IPR02 shift 8
+ 70 IRQ6         IPR02 shift 4
+ 71 IRQ7         IPR02 shift 0
+ 91 FIFE         IPR05 shift 4
+ 92 ADI0         IPR05 shift 4
+ 96 ADI1         IPR05 shift 0
+104 ERS_0        IPR18 shift 8
+105 OVR_0        IPR18 shift 8
+107 SLE_0        IPR18 shift 8
+108 DEI0         IPR06 shift 12
+109 HEI0         IPR06 shift 12
+112 DEI1         IPR06 shift 8
+113 HEI1         IPR06 shift 8
+116 DEI2         IPR06 shift 4
+117 HEI2         IPR06 shift 4
+120 DEI3         IPR06 shift 0
+121 HEI3         IPR06 shift 0
+124 DEI4         IPR07 shift 12
+125 HEI4         IPR07 shift 12
+128 DEI5         IPR07 shift 8
+129 HEI5         IPR07 shift 8
+132 DEI6         IPR07 shift 4
+133 HEI6         IPR07 shift 4
+136 DEI7         IPR07 shift 0
+137 HEI7         IPR07 shift 0
+140 CMI0         IPR08 shift 12
+144 CMI1         IPR08 shift 8
+148 CMI          IPR08 shift 4
+152 ITI          IPR08 shift 0
+153 EINT0        IPR19 shift 4
+156 TGIA_0       IPR09 shift 12
+157 TGIB_0       IPR09 shift 12
+158 TGIC_0       IPR09 shift 12
+159 TGID_0       IPR09 shift 12
+160 TCIV_0       IPR09 shift 8
+161 TGIE_0       IPR09 shift 8
+162 TGIF_0       IPR09 shift 8
+164 TGIA_1       IPR09 shift 4
+165 TGIB_1       IPR09 shift 4
+168 TCIV_1       IPR09 shift 0
+169 TCIU_1       IPR09 shift 0
+172 TGIA_2       IPR10 shift 12
+173 TGIB_2       IPR10 shift 12
+176 TCIV_2       IPR10 shift 8
+177 TCIU_2       IPR10 shift 8
+180 TGIA_3       IPR10 shift 4
+181 TGIB_3       IPR10 shift 4
+182 TGIC_3       IPR10 shift 4
+183 TGID_3       IPR10 shift 4
+184 TCIV_3       IPR10 shift 0
+188 TGIA_4       IPR11 shift 12
+189 TGIB_4       IPR11 shift 12
+190 TGIC_4       IPR11 shift 12
+191 TGID_4       IPR11 shift 12
+192 TCIV_4       IPR11 shift 8
+196 TGIU_5       IPR11 shift 4
+197 TGIV_5       IPR11 shift 4
+198 TGIW_5       IPR11 shift 4
+200 OEI1         IPR11 shift 0
+201 OEI2         IPR11 shift 0
+204 TGIA_3S      IPR12 shift 12
+205 TGIB_3S      IPR12 shift 12
+206 TGIC_3S      IPR12 shift 12
+207 TGID_3S      IPR12 shift 12
+208 TCIV_3S      IPR12 shift 8
+212 TGIA_4S      IPR12 shift 4
+213 TGIB_4S      IPR12 shift 4
+214 TGIC_4S      IPR12 shift 4
+215 TGID_4S      IPR12 shift 4
+216 TCIV_4S      IPR12 shift 0
+220 TGIU_5S      IPR13 shift 12
+221 TGIV_5S      IPR13 shift 12
+222 TGIW_5S      IPR13 shift 12
+224 OEI3         IPR13 shift 8
+226 USI0         IPR18 shift 12
+227 USI1         IPR18 shift 12
+228 STPI         IPR13 shift 4
+229 NAKI         IPR13 shift 4
+230 RXI          IPR13 shift 4
+231 TXI          IPR13 shift 4
+232 TEI          IPR13 shift 4
+233 SPEI         IPR17 shift 12
+234 SPRI         IPR17 shift 12
+235 SPTI         IPR17 shift 12
+236 ERI4         IPR17 shift 8
+237 RXI4         IPR17 shift 8
+238 TXI4         IPR17 shift 8
+239 TEI4         IPR17 shift 8
+240 ERI0         IPR16 shift 12
+241 RXI0         IPR16 shift 12
+242 TXI0         IPR16 shift 12
+243 TEI0         IPR16 shift 12
+244 ERI1         IPR16 shift 8
+245 RXI1         IPR16 shift 8
+246 TXI1         IPR16 shift 8
+247 TEI1         IPR16 shift 8
+248 ERI2         IPR16 shift 4
+249 RXI2         IPR16 shift 4
+250 TXI2         IPR16 shift 4
+251 TEI2         IPR16 shift 4
+252 BRI3         IPR14 shift 0
+253 ERI3         IPR14 shift 0
+254 RXI3         IPR14 shift 0
+255 TXI3         IPR14 shift 0

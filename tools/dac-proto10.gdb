@@ -1,0 +1,3 @@
+set pagination off
+disassemble getCmdParamSize
+disassemble deviceConnect2Type

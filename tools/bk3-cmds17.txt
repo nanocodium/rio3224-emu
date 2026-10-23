@@ -1,0 +1,7 @@
+echo START
+cat /proc/1/cmdline; echo; ls -la /dev/console /dev/ttyPS0 /dev/ttyPS1 /dev/ttynull; cat /proc/mounts | sed -n 1,8p
+dmesg | grep -iE "console|ttynull|init" | sed -n 1,10p
+ls /etc/init.d; cat /etc/inittab | grep -v "^#"
+sh -x /etc/init.d/rcS > /tmp/rcS.log 2>&1 &
+sleep 25; sed -n 1,25p /tmp/rcS.log
+ls /dev/flash/capability /tmp

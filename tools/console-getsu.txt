@@ -1,0 +1,2 @@
+28000 mms
+28500 getprm SETUP Dev/UI/StartupMode 0 0

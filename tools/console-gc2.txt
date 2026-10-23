@@ -1,0 +1,19 @@
+24000 mms
+24500 set gain 0 2000
+25000 setprm 64 0 0 1
+25500 getprm 64 0 0
+26000 getprm 63 0 0
+26500 set gain 0 2600
+27000 getprm 63 0 0
+27500 getprm 60 0 0
+28000 /rep gcom
+28600 /rep gcoms
+29200 /mms setprm 64 0 0 0
+29700 /mms getprm 64 0 0
+30200 /mms getprm 63 0 0
+30700 /mms getprm 11 0 0
+31200 /mms getprm 10 0 0
+31700 /mms getprm 9 0 0
+32200 /mms getprm 8 0 0
+32700 /mms getprm 29 0 0
+33200 /mms getprm 32 0 0

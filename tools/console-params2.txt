@@ -1,0 +1,16 @@
+24000 mms
+25000 set gcon 0 0
+26000 set gain 0 1000
+27000 set gain 0 1600
+28000 set gcon 0 1
+29000 set gcgain 0 2000
+30000 set gain 0 2200
+31000 set gcon 0 0
+32000 set gain 0 2800
+33000 set gain 1 3000
+34000 set hpffreq 1 8000
+35000 set gain 9 3000
+36000 set gain 17 3000
+37000 set hpfon 17 1
+38000 set hpfon 31 1
+39000 set 48v 31 1

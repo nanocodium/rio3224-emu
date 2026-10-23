@@ -1,0 +1,5 @@
+30000 mms
+30500 getprm SETUP Dev/UI/StartupMode 0 0
+31000 setprm SETUP Dev/UI/StartupMode 0 0 1
+31500 getprm SETUP Dev/UI/StartupMode 0 0
+32000 save

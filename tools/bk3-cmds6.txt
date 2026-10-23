@@ -1,0 +1,6 @@
+echo START
+module_config 2>&1 | sed -n 1,30p
+echo 1 > /proc/sys/debug/exception-trace
+/usr/local/bin/dac -t > /tmp/dac2.log 2>&1 &
+sleep 5; cat /tmp/dac2.log; dmesg | grep -i -A12 "dac" | sed -n 1,40p
+/usr/local/bin/dac -h 2>&1 | sed -n 1,40p

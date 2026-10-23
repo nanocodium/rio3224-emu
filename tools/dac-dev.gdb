@@ -1,0 +1,9 @@
+set pagination off
+disassemble /s getConnectState
+disassemble /s dacDeviceGetBrowseInfo
+disassemble /s dacCmdParamConvBaseMode
+disassemble /s dacCmdParamConvDeviceConnect
+ptype /o DAC_PARAM_DEVICE_CONNECT
+ptype enum DAC_DEVICE_CONNECT
+ptype enum DAC_DEVICE_LACK_FLAG
+ptype enum DAC_MODE

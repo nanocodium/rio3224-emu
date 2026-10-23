@@ -1,0 +1,7 @@
+30000 dio
+30500 state
+31500 mute dsp 0
+32000 mute ana 0
+32500 state
+33500 /rep current
+35000 /dsp meter

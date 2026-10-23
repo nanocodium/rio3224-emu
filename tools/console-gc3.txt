@@ -1,0 +1,13 @@
+24000 mms
+24500 getprm NONVOLATILE InputChannel/HeadAmp/Gain 0 0
+25000 set gain 0 2000
+25500 setprm NONVOLATILE InputChannel/GainCompensation/On 0 0 1
+26000 /rep gcom
+26600 /rep gcoms
+27200 /mms set gain 0 2600
+27700 /rep gcoms
+28300 /rep hgain
+28900 /mms getprm NONVOLATILE InputChannel/GainCompensation/On 0 0
+29400 /mms setprm NONVOLATILE InputChannel/GainCompensation/On 0 0 0
+29900 /rep gcom
+30500 /rep gcoms

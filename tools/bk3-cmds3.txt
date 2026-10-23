@@ -1,0 +1,5 @@
+echo START
+hexdump -C /dev/mtdblock10 | sed -n 1,6p
+hexdump -C /dev/mtdblock9 | sed -n 1,3p
+hexdump -C /dev/mtd15 | sed -n 1,3p
+dd if=/dev/mtdblock10 bs=4096 skip=1 count=1 2>/dev/null | hexdump -C | sed -n 1,3p

@@ -1,0 +1,15 @@
+24000 mms
+24500 set gain 0 2000
+25000 set gcon 0 1
+25500 get gcon 0
+26000 get gcgain 0
+26500 set gain 0 2600
+27000 get gcgain 0
+27500 get gcon 0
+28000 set gcon 0 0
+28500 get gcgain 0
+29000 rep
+29500 gcom
+30500 gcoms
+31500 hgain
+32500 hpff

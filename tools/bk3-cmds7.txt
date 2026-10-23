@@ -1,0 +1,2 @@
+echo START
+gdb -q -batch -ex run -ex bt -ex "info registers pc lr sp" -ex "x/6i $pc" -ex "info sharedlibrary" --args /usr/local/bin/dac -t 2>&1 | grep -v "^\[Thu" | sed -n 1,60p

@@ -1,0 +1,16 @@
+24000 mms
+24500 getprm 60 1 0
+25000 getprm 60 0 1
+25500 getprm 60 1 1
+26000 getprm NONVOLATILE InputChannel/HeadAmp/Gain 1 0
+26500 getprm NONVOLATILE InputChannel/HeadAmp/Gain 0 1
+27000 setprm 64 1 0 1
+27500 setprm 64 0 1 1
+28000 /rep gcom
+28600 /rep gcoms
+29200 /mms getprm 64 1 0
+29700 /mms getprm 64 0 1
+30200 /mms getprm 39 0 0
+30700 /mms getprm 39 1 0
+31200 /mms getprm 11 1 0
+31700 /mms getprm 59 1 0

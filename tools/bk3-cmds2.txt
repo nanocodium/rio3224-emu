@@ -1,0 +1,7 @@
+echo START
+mount -t squashfs -o ro /dev/mtdblock10 /mnt; echo rc=$?
+cat /proc/sys/kernel/printk; cat /sys/block/mtdblock10/queue/logical_block_size; ls -la /dev/mtdblock10
+dmesg > /tmp/d.txt; wc -l /tmp/d.txt; sed -n '/Run .init/,$p' /tmp/d.txt | grep -v SMI
+ls /sys/module | grep -i -E "squash|loop|mtd"
+cat /proc/cmdline
+mount -t squashfs /dev/mtdblock9 /mnt; echo rc=$?
